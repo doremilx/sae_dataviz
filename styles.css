@@ -1,0 +1,10 @@
+*, *::before, *::after {
+box-sizing: border box;}
+
+body {
+    background-color: #FBF6D1;}
+
+    #map{height: 800px;
+    width: 80%;
+border-radius: 50px;
+border: white 5px solid;}
