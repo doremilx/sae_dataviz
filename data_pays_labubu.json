@@ -1,0 +1,551 @@
+[
+  {
+    "id": 1,
+    "pays": "Hong Kong",
+    "valeur": 100,
+    "latitude": 22.3506,
+    "longitude": 114.185,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q8646",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Hong_Kong"
+  },
+  {
+    "id": 2,
+    "pays": "Singapour",
+    "valeur": 75,
+    "latitude": 1.35711,
+    "longitude": 103.819,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q334",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Singapour"
+  },
+  {
+    "id": 3,
+    "pays": "Australie",
+    "valeur": 43,
+    "latitude": -24.7761086,
+    "longitude": 134.755,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q408",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Australie"
+  },
+  {
+    "id": 4,
+    "pays": "Pologne",
+    "valeur": 42,
+    "latitude": 52.215933,
+    "longitude": 19.134422,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q36",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Pologne"
+  },
+  {
+    "id": 5,
+    "pays": "États-Unis",
+    "valeur": 40,
+    "latitude": 39.7837304,
+    "longitude": -100.445882,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q30",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/%C3%89tats-Unis"
+  },
+  {
+    "id": 6,
+    "pays": "Émirats arabes unis",
+    "valeur": 38,
+    "latitude": 24.0002488,
+    "longitude": 53.9994829,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q878",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis"
+  },
+  {
+    "id": 7,
+    "pays": "Slovaquie",
+    "valeur": 38,
+    "latitude": 48.7411522,
+    "longitude": 19.4528646,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q214",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Slovaquie"
+  },
+  {
+    "id": 8,
+    "pays": "Suède",
+    "valeur": 38,
+    "latitude": 59.6749712,
+    "longitude": 14.5208584,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q34",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Su%C3%A8de"
+  },
+  {
+    "id": 9,
+    "pays": "Tchéquie",
+    "valeur": 35,
+    "latitude": 49.7439047,
+    "longitude": 15.3381061,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q213",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Tch%C3%A9quie"
+  },
+  {
+    "id": 10,
+    "pays": "Royaume-Uni",
+    "valeur": 33,
+    "latitude": 54.6,
+    "longitude": -2,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q145",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Royaume-Uni"
+  },
+  {
+    "id": 11,
+    "pays": "Nouvelle-Zélande",
+    "valeur": 33,
+    "latitude": -41.5000831,
+    "longitude": 172.8344077,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q664",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Nouvelle-Z%C3%A9lande"
+  },
+  {
+    "id": 12,
+    "pays": "Hongrie",
+    "valeur": 33,
+    "latitude": 47.1817585,
+    "longitude": 19.5060937,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q28",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Hongrie"
+  },
+  {
+    "id": 13,
+    "pays": "Malaisie",
+    "valeur": 32,
+    "latitude": 4.5693754,
+    "longitude": 102.2656823,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q833",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Malaisie"
+  },
+  {
+    "id": 14,
+    "pays": "Norvège",
+    "valeur": 32,
+    "latitude": 61.1529386,
+    "longitude": 8.7876653,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q20",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Norv%C3%A8ge"
+  },
+  {
+    "id": 15,
+    "pays": "Canada",
+    "valeur": 32,
+    "latitude": 61.0666922,
+    "longitude": -107.991707,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q16",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Canada"
+  },
+  {
+    "id": 16,
+    "pays": "Lituanie",
+    "valeur": 31,
+    "latitude": 55.3500003,
+    "longitude": 23.7499997,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q37",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Lituanie"
+  },
+  {
+    "id": 17,
+    "pays": "Pays-Bas",
+    "valeur": 31,
+    "latitude": 52.2434979,
+    "longitude": 5.6343227,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q55",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Pays-Bas_(pays_constitutif)"
+  },
+  {
+    "id": 18,
+    "pays": "Roumanie",
+    "valeur": 30,
+    "latitude": 46,
+    "longitude": 25,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q218",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Roumanie"
+  },
+  {
+    "id": 19,
+    "pays": "Mexique",
+    "valeur": 30,
+    "latitude": 23,
+    "longitude": -102,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q96",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Mexique"
+  },
+  {
+    "id": 20,
+    "pays": "Danemark",
+    "valeur": 29,
+    "latitude": 56,
+    "longitude": 10,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q35",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Danemark_(pays_constitutif)"
+  },
+  {
+    "id": 21,
+    "pays": "Chine",
+    "valeur": 29,
+    "latitude": 35.844722222,
+    "longitude": 103.451944444,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q148",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Chine"
+  },
+  {
+    "id": 22,
+    "pays": "Taïwan",
+    "valeur": 27,
+    "latitude": 24,
+    "longitude": 121,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q865",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Ta%C3%AFwan"
+  },
+  {
+    "id": 23,
+    "pays": "Philippines",
+    "valeur": 27,
+    "latitude": 12,
+    "longitude": 123,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q928",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Philippines"
+  },
+  {
+    "id": 24,
+    "pays": "Croatie",
+    "valeur": 26,
+    "latitude": 45.25,
+    "longitude": 15.466667,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q224",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Croatie"
+  },
+  {
+    "id": 25,
+    "pays": "Irlande",
+    "valeur": 24,
+    "latitude": 53,
+    "longitude": -8,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q27",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Irlande_(pays)"
+  },
+  {
+    "id": 26,
+    "pays": "Portugal",
+    "valeur": 24,
+    "latitude": 38.7,
+    "longitude": -9.183333333,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q45",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Portugal"
+  },
+  {
+    "id": 27,
+    "pays": "Allemagne",
+    "valeur": 24,
+    "latitude": 51,
+    "longitude": 10,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q183",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Allemagne"
+  },
+  {
+    "id": 28,
+    "pays": "Autriche",
+    "valeur": 24,
+    "latitude": 48,
+    "longitude": 14,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q40",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Autriche"
+  },
+  {
+    "id": 29,
+    "pays": "Chili",
+    "valeur": 23,
+    "latitude": -33,
+    "longitude": -71,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q298",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Chili"
+  },
+  {
+    "id": 30,
+    "pays": "Grèce",
+    "valeur": 23,
+    "latitude": 38.5,
+    "longitude": 23,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q41",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Gr%C3%A8ce"
+  },
+  {
+    "id": 31,
+    "pays": "Suisse",
+    "valeur": 23,
+    "latitude": 46.798562,
+    "longitude": 8.231973,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q39",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Suisse"
+  },
+  {
+    "id": 32,
+    "pays": "Italie",
+    "valeur": 23,
+    "latitude": 42.5,
+    "longitude": 12.5,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q38",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Italie"
+  },
+  {
+    "id": 33,
+    "pays": "Finlande",
+    "valeur": 22,
+    "latitude": 65,
+    "longitude": 27,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q33",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Finlande"
+  },
+  {
+    "id": 34,
+    "pays": "Belgique",
+    "valeur": 22,
+    "latitude": 50.641111111,
+    "longitude": 4.668055555,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q31",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Belgique"
+  },
+  {
+    "id": 35,
+    "pays": "Turquie",
+    "valeur": 22,
+    "latitude": 39,
+    "longitude": 36,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q43",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Turquie"
+  },
+  {
+    "id": 36,
+    "pays": "Serbie",
+    "valeur": 21,
+    "latitude": 43.95,
+    "longitude": 20.933333333,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q403",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Serbie"
+  },
+  {
+    "id": 37,
+    "pays": "Indonésie",
+    "valeur": 19,
+    "latitude": -2,
+    "longitude": 118,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q252",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Indon%C3%A9sie"
+  },
+  {
+    "id": 38,
+    "pays": "Brésil",
+    "valeur": 19,
+    "latitude": -14,
+    "longitude": -53,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q155",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Br%C3%A9sil"
+  },
+  {
+    "id": 39,
+    "pays": "Argentine",
+    "valeur": 18,
+    "latitude": 45.493888888,
+    "longitude": 6.312777777,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q414",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Argentine"
+  },
+  {
+    "id": 40,
+    "pays": "Bulgarie",
+    "valeur": 16,
+    "latitude": 42.75,
+    "longitude": 25.5,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q219",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Bulgarie"
+  },
+  {
+    "id": 41,
+    "pays": "France",
+    "valeur": 16,
+    "latitude": 47,
+    "longitude": 2,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q142",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/France"
+  },
+  {
+    "id": 42,
+    "pays": "Maroc",
+    "valeur": 15,
+    "latitude": 32,
+    "longitude": -6,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q1028",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Maroc"
+  },
+  {
+    "id": 43,
+    "pays": "Espagne",
+    "valeur": 15,
+    "latitude": 40.2,
+    "longitude": -3.5,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q29",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Espagne"
+  },
+  {
+    "id": 44,
+    "pays": "Pérou",
+    "valeur": 14,
+    "latitude": -9.4,
+    "longitude": -76,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q419",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A9rou"
+  },
+  {
+    "id": 45,
+    "pays": "Viêt Nam",
+    "valeur": 13,
+    "latitude": 16,
+    "longitude": 108,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q881",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Vietnam"
+  },
+  {
+    "id": 46,
+    "pays": "Pakistan",
+    "valeur": 12,
+    "latitude": 30,
+    "longitude": 71,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q843",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Pakistan"
+  },
+  {
+    "id": 47,
+    "pays": "Équateur",
+    "valeur": 11,
+    "latitude": -1,
+    "longitude": -78,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q736",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/%C3%89quateur_(pays)"
+  },
+  {
+    "id": 48,
+    "pays": "Colombie",
+    "valeur": 9,
+    "latitude": 4,
+    "longitude": -73.25,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q739",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Colombie"
+  },
+  {
+    "id": 49,
+    "pays": "Nigeria",
+    "valeur": 9,
+    "latitude": 9,
+    "longitude": 8,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q1033",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Nigeria"
+  },
+  {
+    "id": 50,
+    "pays": "Afrique du Sud",
+    "valeur": 9,
+    "latitude": -29,
+    "longitude": 24,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q258",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Afrique_du_Sud"
+  },
+  {
+    "id": 51,
+    "pays": "Thaïlande",
+    "valeur": 8,
+    "latitude": 14,
+    "longitude": 101,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q869",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Tha%C3%AFlande"
+  },
+  {
+    "id": 52,
+    "pays": "Inde",
+    "valeur": 7,
+    "latitude": 22.8,
+    "longitude": 83,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q668",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Inde"
+  },
+  {
+    "id": 53,
+    "pays": "Venezuela",
+    "valeur": 7,
+    "latitude": 8,
+    "longitude": -67,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q717",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Venezuela"
+  },
+  {
+    "id": 54,
+    "pays": "Arabie saoudite",
+    "valeur": 6,
+    "latitude": 23.716667,
+    "longitude": 44.116667,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q851",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Arabie_saoudite"
+  },
+  {
+    "id": 55,
+    "pays": "Égypte",
+    "valeur": 5,
+    "latitude": 27,
+    "longitude": 29,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q79",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/%C3%89gypte"
+  },
+  {
+    "id": 56,
+    "pays": "Ukraine",
+    "valeur": 3,
+    "latitude": 49,
+    "longitude": 32,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q212",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Ukraine"
+  },
+  {
+    "id": 57,
+    "pays": "Corée du Sud",
+    "valeur": 3,
+    "latitude": 0,
+    "longitude": 0,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q884",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Cor%C3%A9e_du_Sud"
+  },
+  {
+    "id": 58,
+    "pays": "Japon",
+    "valeur": 2,
+    "latitude": 0,
+    "longitude": 0,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q17",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Japon"
+  },
+  {
+    "id": 59,
+    "pays": "Russie",
+    "valeur": 2,
+    "latitude": 0,
+    "longitude": 0,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q159",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Russie"
+  },
+  {
+    "id": 60,
+    "pays": "Iran",
+    "valeur": 1,
+    "latitude": 0,
+    "longitude": 0,
+    "lien_wikidata": "http://www.wikidata.org/entity/Q794",
+    "lien_wikipedia": "https://fr.wikipedia.org/wiki/Iran"
+  },
+  {
+    "id": "",
+    "pays": "",
+    "valeur": "",
+    "latitude": "",
+    "longitude": "",
+    "lien_wikidata": "http://www.wikidata.org/entity/Q85221364",
+    "lien_wikipedia": ""
+  }
+]
