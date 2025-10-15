@@ -22,10 +22,10 @@
       <div class="top-bar">
         <nav>
           <ul>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Évolution</a></li>
             <li><a href="#">Comparaison</a></li>
-            <li><a href="#">Popularité</a></li>
-            <li><a href="#">À propos</a></li>
+            <li><a href="#">Vue Mondiale</a></li>
           </ul>
         </nav>
 
@@ -36,28 +36,16 @@
 Découvre la popularité de Labubu à travers les données !
     </h1>
     </header>
+    <div class="graphiqueCarte">
     <div id="map"></div>
+    <p>Databubu est un projet étudiant réalisé par Rémi Lin et Roy Najarian, deux étudiants en deuxième année de BUT Métiers du Multimédia et de l’Internet (MMI). Ce projet de datavisualisation s’intéresse à l’univers des Labubu et explore l’évolution de leur popularité à travers le temps grâce à des graphiques et une carte interactive.   En analysant les tendances de recherche dans le monde, Databubu met en lumière la manière dont un simple jouet peut, à lui seul, devenir un véritable phénomène culturel.</p>
+    </div>
+
+        <svg class="histogramme" id="histogramme2" style="width: 100px; height: 100px" viewBox="0 0 100 100"></svg>
+        <svg class="histogramme" id="histogramme3" style="width: 100px; height: 100px" viewBox="0 0 100 100"> </svg>
+        <svg class="histogramme" id="histogramme_marque" style="width: 100px; height: 100px" viewBox="0 0 100 100"> </svg>
+ <div class="infobulle"> </div>
   </body>
-  <script>
-  var map = L.map('map').setView([48.866667,2.333333], 3.3);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
-
-
-
-
-fetch('data_pays_labubu.json')
-  .then(response => response.json())
-  .then(data => {
-    data.forEach((item) => {
-      var marker = L.marker([item.latitude, item.longitude]).addTo(map); 
-      marker.bindPopup("<b>" + item.pays + "</b><br>I am a popup. <br>" + item.latitude + " " +item.longitude).openPopup();
-    })
-    });
-
-    console.log("test")
-  </script>
+  <script src="graphique.js"></script>
+  <script src="carte.js"></script>
 </html>
