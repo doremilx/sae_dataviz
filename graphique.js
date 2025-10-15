@@ -7,11 +7,11 @@ function dessineAxes(id,largeur,hauteur,epaisseur){
 
 
 
-function dessineBarre(id, numero, hauteur, largeur, couleur){
+function dessineBarre(id, numero, hauteur, largeur,ecart, couleur){
   const svg = document.querySelector(id)
   const hauteursvg = svg.clientHeight;
   svg.innerHTML += `<rect class="barre" style="fill:${couleur};" 
-x="${numero+numero*20}" y="${hauteursvg-hauteur}" width="${largeur}" height="${hauteur}" data-value="${hauteur}"/>`
+x="${numero*(20 + ecart)}" y="${100-hauteur}" width="${largeur}" height="${hauteur}" data-value="${hauteur}"/>`
 console.log(hauteursvg)
 console.log(svg)
 }   
@@ -21,24 +21,28 @@ function dessineHistogramme(identifiantC, largeurH, hauteurH, tableau, largeurB,
  </svg>`
  dessineAxes(identifiantC,largeurH, hauteurH, 2)
  tableau.forEach(function(barreHauteur,numero){
-  dessineBarre(identifiantC, numero, barreHauteur, largeurB, couleurB)
+  dessineBarre(identifiantC, numero, barreHauteur, largeurB,ecart, couleurB)
  })
 
-document.querySelectorAll('.barre').forEach(function (element) {
+/* document.querySelectorAll('.barre').forEach(function (element) {
             element.style.transform = "scaleY(0)"
             element.style.transformOrigin = "center bottom"
             let animation = element.animate({ transform: "scaleY(1)" }, 2000)
             animation.addEventListener('finish', function(){
                 element.style.transform = "scaleY(1)"
             })
-        })}
+        }) */}
 
 
 
 
-dessineHistogramme('#histogramme3',100,100,[10,40,20,100,50],17, 15, 'red');
+dessineHistogramme('#histogramme3',100,100,[10,40,20,100,50],17, 1, 'red');
 /* Bon graphique pour les 5 objets tendances en France : labubu, molly, kiki, sonny angel, javascript */
-dessineHistogramme('#histogramme_marque',100,100,[35,19,12,17,17 ],20, 15, 'blue');
+dessineHistogramme('#histogramme_marque',100,100,[35,19,12,17,17 ],20, 1, 'blue');
+
+dessineHistogramme('#histogramme_test',100,100,[35,19,12,17,17 ],20, 1, 'blue');
+
+
 dessineAxes('#histogramme2',100,100,2)
 dessineBarre('#histogramme2', 0, 50, 10, 'red' )
 

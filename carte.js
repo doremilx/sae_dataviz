@@ -15,7 +15,7 @@ fetch('data_pays_labubu.json')
   .then(data => {
     data.forEach((item) => {
       var marker = L.marker([item.latitude, item.longitude]).addTo(map); 
-      marker.bindPopup("<b>" + item.pays + "</b><br>I am a popup. <br>" + item.latitude + " " +item.longitude);
+      marker.bindPopup("<h1>" + item.pays + "</h1><br>I am a popup. <br>" + item.latitude + " " +item.longitude);
     })
     });
 
