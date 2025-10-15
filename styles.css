@@ -1,0 +1,87 @@
+@font-face {
+    font-family: ShineMonday;
+    src: url(ShineMonday.otf);
+}
+
+@font-face {
+    font-family: BiscuitGlitch;
+    src: url(BiscuitGlitch.ttf);
+}
+
+*, *::before, *::after {
+box-sizing: border-box;}
+
+body {
+    background-color: #FBF6D1;
+    margin: 0;
+}
+
+.graphiqueCarte{
+    height: 100Vh;
+}
+
+#map {
+    height: 700px;
+    width: 70%;
+    border-radius: 50px;
+    border: white 5px solid;
+    margin-left: 20px;
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+.accroche{
+    width: 900px;
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 100px;
+    background-color: #FBF6D1;
+    padding: 0px;
+    border-radius: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 70px;
+    background-color: #FBF6D1;
+    width: max-content;
+    padding-block: 15px;
+    padding-inline: 25px;
+    border: solid black 2px;
+    margin-inline: auto;
+    border-radius: 100px;
+    margin-bottom:100px;
+    font-family: BiscuitGlitch;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.75rem;
+}
+
+header {
+    background-image: url(FondAccueil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135vh;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+p{
+    font-family: ShineMonday;
+}
+
+h1{
+    font-family: BiscuitGlitch;
+}
