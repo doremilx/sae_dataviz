@@ -345,8 +345,8 @@
     "id": 39,
     "pays": "Argentine",
     "valeur": 18,
-    "latitude": 45.493888888,
-    "longitude": 6.312777777,
+    "latitude": -38.421,
+    "longitude": -63.587,
     "lien_wikidata": "http://www.wikidata.org/entity/Q414",
     "lien_wikipedia": "https://fr.wikipedia.org/wiki/Argentine"
   },
@@ -507,8 +507,8 @@
     "id": 57,
     "pays": "Corée du Sud",
     "valeur": 3,
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 35.9017,
+    "longitude": 127.7358,
     "lien_wikidata": "http://www.wikidata.org/entity/Q884",
     "lien_wikipedia": "https://fr.wikipedia.org/wiki/Cor%C3%A9e_du_Sud"
   },
@@ -516,8 +516,8 @@
     "id": 58,
     "pays": "Japon",
     "valeur": 2,
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 34.8863,
+    "longitude": 134.3797,
     "lien_wikidata": "http://www.wikidata.org/entity/Q17",
     "lien_wikipedia": "https://fr.wikipedia.org/wiki/Japon"
   },
@@ -525,8 +525,8 @@
     "id": 59,
     "pays": "Russie",
     "valeur": 2,
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 61.5231,
+    "longitude": 105.1,
     "lien_wikidata": "http://www.wikidata.org/entity/Q159",
     "lien_wikipedia": "https://fr.wikipedia.org/wiki/Russie"
   },
@@ -534,18 +534,9 @@
     "id": 60,
     "pays": "Iran",
     "valeur": 1,
-    "latitude": 0,
-    "longitude": 0,
+    "latitude": 32.42,
+    "longitude": 53.6823,
     "lien_wikidata": "http://www.wikidata.org/entity/Q794",
     "lien_wikipedia": "https://fr.wikipedia.org/wiki/Iran"
-  },
-  {
-    "id": "",
-    "pays": "",
-    "valeur": "",
-    "latitude": "",
-    "longitude": "",
-    "lien_wikidata": "http://www.wikidata.org/entity/Q85221364",
-    "lien_wikipedia": ""
   }
 ]
