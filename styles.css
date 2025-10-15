@@ -9,20 +9,23 @@
 }
 
 *, *::before, *::after {
-box-sizing: border box;}
+box-sizing: border-box;}
 
 body {
     background-color: #FBF6D1;
-margin: 0;}
+    margin: 0;
+}
 
 .graphiqueCarte{
     height: 100Vh;
 }
-#map{height: 700px;
+
+#map {
+    height: 700px;
     width: 70%;
-border-radius: 50px;
-border: white 5px solid;
-margin-left: 20px;
+    border-radius: 50px;
+    border: white 5px solid;
+    margin-left: 20px;
 }
 
 
@@ -58,17 +61,21 @@ nav ul {
     margin-bottom:100px;
     font-family: BiscuitGlitch;
 }
-nav a{
+nav a {
     text-decoration: none;
     color: black;
-font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
-header{
-    background-color: #B4C6FF;
+header {
+    background-image: url(FondAccueil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 135vh;
     padding-top: 20px;
     padding-bottom: 50px;
-    height: 100vh;
+    margin-bottom: 50px;
+    z-index: 1;
 }
 
 p{
