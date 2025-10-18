@@ -1,11 +1,11 @@
 @font-face {
     font-family: ShineMonday;
-    src: url(ShineMonday.otf);
+    src: url(fonts/ShineMonday.otf);
 }
 
 @font-face {
     font-family: BiscuitGlitch;
-    src: url(BiscuitGlitch.ttf);
+    src: url(fonts/BiscuitGlitch.ttf);
 }
 
 *, *::before, *::after {
@@ -64,6 +64,21 @@ nav a {
     font-size: 1.75rem;
 }
 
+.texte-presentation{
+    height: 70vh;
+    font-size: 1.5rem;
+    margin-top: 150px;
+}
+.conteneur-presentation{
+    width: 75%;
+    margin-inline: auto;
+    display: flex;
+    gap: 70px;
+}
+.conteneur-presentation img{
+    border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
 .accroche {
     width: 900px;
     text-align: center;
@@ -76,6 +91,7 @@ nav a {
 
 .graphiqueCarte{
     height: 100Vh;
+    background-color: #B4C6FF;
 }
 
 #map {
@@ -85,3 +101,8 @@ nav a {
     border: white 5px solid;
     margin-left: 20px;
 }
+
+.leaflet-popup-content h1{
+    margin: 0;
+}
+

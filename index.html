@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Databubu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Databubu</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-</head>
-
-<body>
-  <header>
-    <div class="top-bar">
-      <nav>
-        <ul>
-          <li><a href="#">Présentation</a></li>
-          <li><a href="#">Évolution</a></li>
-          <li><a href="#">Comparaison</a></li>
-          <li><a href="#">Vue Mondiale</a></li>
-        </ul>
-      </nav>
-
+  <body>
+    <header>
+      <div class="top-bar">
+        <nav>
+          <ul>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Évolution</a></li>
+            <li><a href="#">Comparaison</a></li>
+            <li><a href="#">Vue Mondiale</a></li>
+          </ul>
+        </nav>
+      </div>
+      <img src="NewLogo.png" alt="" width="1000" class="logo" />
+      <h1 class="accroche">
+        Parce que même les jouets ont leurs courbes de tendance… Découvre la
+        popularité de Labubu à travers les données !
+      </h1>
+    </header>
+    <div class="texte-presentation">
+      <div class="conteneur-presentation">
+        <img src="labubu-presentation.jpg" alt="" width="500px">
+        <div>
+          <h1>DATABUBU</h1>
+        <p>
+          Databubu est un projet étudiant réalisé par Rémi Lin et Roy Najarian,
+          deux étudiants en deuxième année de BUT Métiers du Multimédia et de
+          l’Internet (MMI). Ce projet de datavisualisation s’intéresse à
+          l’univers des Labubu et explore l’évolution de leur popularité à
+          travers le temps grâce à des graphiques et une carte interactive. 
+          <br> <br>
+          En
+          analysant les tendances de recherche dans le monde, Databubu met en
+          lumière la manière dont un simple jouet peut, à lui seul, devenir un
+          véritable phénomène culturel.
+        </p></div>
+      </div>
     </div>
-    <img src="NewLogo.png" alt="" width="1000" class="logo">
-    <h1 class="accroche">
-      Parce que même les jouets ont leurs courbes de tendance…
-      Découvre la popularité de Labubu à travers les données !
-    </h1>
-  </header>
-  <div class="graphiqueCarte">
-    <div id="map"></div>
-    <p>Databubu est un projet étudiant réalisé par Rémi Lin et Roy Najarian, deux étudiants en deuxième année de BUT
-      Métiers du Multimédia et de l’Internet (MMI). Ce projet de datavisualisation s’intéresse à l’univers des Labubu et
-      explore l’évolution de leur popularité à travers le temps grâce à des graphiques et une carte interactive. En
-      analysant les tendances de recherche dans le monde, Databubu met en lumière la manière dont un simple jouet peut,
-      à lui seul, devenir un véritable phénomène culturel.</p>
-  </div>
+    <div class="graphiqueCarte">
+      <div id="map"></div>
+    </div>
 
-  <svg class="histogramme" id="histogramme2" style="width: 100px; height: 100px" viewBox="0 0 100 100"></svg>
-  <svg class="histogramme" id="histogramme3" style="width: 100px; height: 100px" viewBox="0 0 100 100"> </svg>
-  <svg class="histogramme" id="histogramme_marque" style="width: 100px; height: 100px" viewBox="0 0 100 100"> </svg>
-  <svg class="histogramme" id="histogramme_test" style="width: 500px; height: 500px" viewBox="0 0 110 100"> </svg>
-  
-  <div class="infobulle"> </div>
-</body>
+    <svg
+      class="histogramme"
+      id="histogramme2"
+      style="width: 100px; height: 100px"
+      viewBox="0 0 100 100"
+    ></svg>
+    <svg
+      class="histogramme"
+      id="histogramme3"
+      style="width: 100px; height: 100px"
+      viewBox="0 0 100 100"
+    ></svg>
+    <svg
+      class="histogramme"
+      id="histogramme_marque"
+      style="width: 100px; height: 100px"
+      viewBox="0 0 100 100"
+    ></svg>
+    <svg
+      class="histogramme"
+      id="histogramme_test"
+      style="width: 500px; height: 500px"
+      viewBox="0 0 110 100"
+    ></svg>
 
-<script src="graphique.js"></script>
-<script src="carte.js"></script>
+    <div class="infobulle"></div>
+  </body>
 
+  <script src="graphique.js"></script>
+  <script src="carte.js"></script>
 </html>
