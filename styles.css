@@ -92,14 +92,14 @@ nav a {
 .graphiqueCarte{
     height: 100Vh;
     background-color: #B4C6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #map {
-    height: 700px;
-    width: 70%;
-    border-radius: 50px;
-    border: white 5px solid;
-    margin-left: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 .leaflet-popup-content h1{
