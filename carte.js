@@ -1,11 +1,10 @@
 /* PARTIE CARTE */
 let map = L.map('map', {
-  attributionControl: false,
-  maxBounds: [[-70, -250], [85, 250]],
+/*   attributionControl: false, */
+  maxBounds: [[-70, -180], [85, 180]],
   maxBoundsViscosity: 1.0,
   minZoom: 2,
   maxZoom: 10,
-  scrollWheelZoom: false
 }
 ).setView([48.866667, 2.333333], 2.4);
 

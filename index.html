@@ -18,6 +18,7 @@
     ></script>
     <script src="https://unpkg.com/esri-leaflet@3/dist/esri-leaflet.js"></script>
 <script src="https://unpkg.com/esri-leaflet-vector@4/dist/esri-leaflet-vector.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -40,7 +41,7 @@
     </header>
     <div class="texte-presentation">
       <div class="conteneur-presentation">
-        <img src="labubu-presentation.jpg" alt="" width="500px">
+        <img src="labubu-presentation.jpg" alt="" />
         <div>
           <h1>DATABUBU</h1>
         <p>
@@ -59,7 +60,16 @@
     </div>
     <div class="graphiqueCarte">
       <div id="map"></div>
+      <div class="legendeCarte">
+        <div class="legendes"><img src="labubu_marker_vert.png" alt="" width="60px"> <p>: Forte popularité</p></div>
+        <div class="legendes"><img src="labubu_marker_bleu.png" alt="" width="60px"> <p>: Bonne popularité</p></div>
+        <div class="legendes"><img src="labubu_marker_rouge.png" alt="" width="60px"> <p>: Forte popularité</p></div>
+
+
+      </div>
     </div>
+
+<canvas id="myChart"></canvas>
 
     <svg
       class="histogramme"

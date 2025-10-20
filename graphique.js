@@ -43,7 +43,7 @@ dessineBarre('#histogramme2', 0, 50, 10, 'red')
 dessineBarre('#histogramme2', 1, 20, 10, 'yellow')
 dessineBarre('#histogramme2', 2, 90, 10, 'green')
 
-/* document.querySelector("svg.histogramme").innerHTML += `
+document.querySelector("svg.histogramme").innerHTML += `
 
 <rect class="barre" style="fill:#0073ff;" 
 x="0" y="0" width="18" height="100" data-value="100"/>
@@ -57,7 +57,25 @@ x="60" y="90" width="18" height="10" data-value="10"/>
 x="80" y="50" width="18" height="50" data-value="50"/> 
 <path class="axehorizontal" style="fill:black" d="M 0 0 L 0 100 L 2 100 L 2 0"  />
 
-<path class="axevertical" style="fill:black;" d="M 0 100 L 100 100 L 100 98 L 0 98 " />` */
+<path class="axevertical" style="fill:black;" d="M 0 100 L 100 100 L 100 98 L 0 98 " />`
+
+
+
+document.querySelector("#histogramme_test").innerHTML += `
+
+<rect class="barre" style="fill:#ff0000ff;" 
+x="0" y="0" width="20" height="65" data-value="65"/>
+<rect class="barre" style="fill: #ff0000ff" 
+x="21" y="31" width="20" height="50" data-value="50"/> 
+<rect class="barre" style="fill: #ff0000ff" 
+x="42" y="10" width="20" height="90" data-value="90"/> 
+<rect class="barre" style="fill: #ff0000ff" 
+x="63" y="90" width="20" height="10" data-value="10"/>
+<rect class="barre" style="fill: #ff0000ff" 
+x="84" y="50" width="20" height="50" data-value="50"/> 
+<path class="axehorizontal" style="fill:black" d="M 0 0 L 0 100 L 2 100 L 2 0"  />
+
+<path class="axevertical" style="fill:black;" d="M 0 100 L 100 100 L 100 98 L 0 98 " />`
 
 document.querySelectorAll('.barre').forEach(function (lol) {
   lol.addEventListener('mouseenter', function () {
@@ -66,3 +84,25 @@ document.querySelectorAll('.barre').forEach(function (lol) {
   })
 });
 
+/* CODE POUR CHARTJS */
+
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
