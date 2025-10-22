@@ -86,23 +86,54 @@ document.querySelectorAll('.barre').forEach(function (lol) {
 
 /* CODE POUR CHARTJS */
 
-const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1
-      }]
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Octobre 2024', 'Novembre 2024', 'Décembre 2024', 'Janvier 2025', 'Février 2025', 'Mars 2025', 'Avril 2025', 'Mai 2025', 'Juin 2025', 'Juillet 2025', 'Août 2025', 'Septembre 2025', 'Octobre 2025'],
+    datasets: [
+      {
+        label: 'Labubu',
+        data: [1, 1, 1,2,3,3,3,22,40,95,85,45,33],
+        backgroundColor: 'rgba(255, 99, 132, 0.5)'
+      },
+      {
+        label: 'Sonny Angel',
+        data: [22, 22, 22,13,12,9,9,8,8,8,9,6,5],
+        backgroundColor: 'rgba(54, 162, 235, 0.5)'
+      },
+       {
+        label: 'Figurine Pop',
+        data: [5, 8, 9,4,3,3,4,3,3,3,4,4,4],
+        backgroundColor: 'yellow'
+      },
+       {
+        label: 'Kiki',
+        data: [9, 8, 8,7,8,7,8,8,9,13,10,8,8],
+        backgroundColor: 'green'
+      }, {
+        label: 'Molly',
+        data: [16, 13, 13,13,14,15,13,13,12,14,15,13,13],
+        backgroundColor: 'orange'
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      title: {
+        display: true,
+        text: 'Evolution de l\'inrérêt de recherches Google des jouets similaires à Labubu (2024-2025)'
+      }
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
+    scales: {
+      x: {
+        stacked: true
+      },
+      y: {
+        stacked: true
       }
     }
-  });
+  }
+});
