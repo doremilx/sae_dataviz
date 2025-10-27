@@ -64,6 +64,7 @@ nav a {
     font-size: 1.75rem;
 }
 
+
 .texte-presentation{
     height: 70vh;
     font-size: 1.5rem;
@@ -77,7 +78,8 @@ nav a {
 }
 .conteneur-presentation img{
     border-radius: 50px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    height: min-content;
 }
 .accroche {
     width: 900px;
@@ -86,31 +88,81 @@ nav a {
     margin-top: 100px;
     background-color: #FBF6D1;
     padding: 0px;
-    border-radius: 100px;
+    padding-top: 7px;
+
+    border-radius: 100px 100px 0px 0px;
 }
 
+
+
+
+.FondueVertHaut{
+    background-image: url(TransitionsPages/TransitionVertHaut.svg);
+    height: 91px;
+}
+.graphiquePoints{
+    height: 100vh;
+    background-color: #CBD7A8;
+}
+.FondueVertBas{
+    background-image: url(TransitionsPages/TransitionVertBas.svg);
+    height: 91px;
+}
+
+
+
+.conteneur-empile{
+   background-color: #FBF6D1; 
+    height: 100vh;
+    padding-top: 30px
+
+}
+.conteneur-empile h1{
+width: fit-content;
+margin-left: auto;
+margin-right: 50px;
+margin-bottom: 100px;
+}
+.graphiqueEmpile{
+    width: 90%;
+    height: 500px;
+    margin-inline: auto;
+    }
+
+
+
+
+
+
+
 .graphiqueCarte{
-    height: 100Vh;
-    background-color: #B4C6FF;
-    display: flex;
-padding-top: 100px;
+    height: 100vh;
+    background-color: #E99EA8;
+}
+.graphiqueCarte h1{
+    width: 60%;
+    margin: 0;
+    padding-top: 50px;
+    margin-left: 50px;
 }
 
 #map {
     height: 700px;
     width: 70%;
     border-radius: 50px;
-    border: white 5px solid;
+    border: black 1px solid;
     margin-left: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
 }
 
 .legendeCarte{
     width: 25%;
     margin-left: 20px;
-    margin-top: 20px;
-    background-color: white;
+    margin-top: 60px;
+    background-color: #B4C6FF;
     border-radius: 30px;
-    border: black 3px solid;
+    border: black 1px solid;
     padding: 15px;
     font-family: ShineMonday;
     font-size: 1.2rem;
@@ -118,7 +170,13 @@ padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }   
+.carteFlex{
+    display: flex;
+    width: 95%;
+    margin-inline: auto;
+}
 
 .legendes{
     display: flex;
@@ -127,12 +185,69 @@ padding-top: 100px;
     margin: 0;
 }
 
-.conteneur-empile{
-    background-color: #b38c68;
+.FondueRoseHaut{
+    background-image: url(TransitionsPages/TransitionRoseHaut.svg);
+    height: 91px;
 }
-.graphiqueEmpile{
-    width: 50%;
-    height: 500px;
-    background-color: #FBF6D1;
-    padding-right: 50px;
+.FondueRoseBas{
+    background-image: url(TransitionsPages/TransitionRoseBas.svg);
+    height: 91px;
+}
+
+
+footer{
+padding-bottom: 30px;
+}
+footer ul{
+    list-style-type: none;
+    font-family: 'BiscuitGlitch', Courier, monospace; 
+font-size: 1.5rem;
+margin: 0;
+padding: 0;
+width: max-content;
+margin-left: auto;
+margin-right: 50px;
+}
+
+footer ul li{
+margin-top: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+color: black;}
+footer ul li a:hover{
+text-decoration-line: underline;
+color: blueviolet;}
+
+
+
+
+
+
+
+
+    
+        @media (max-width: 1200px) {
+            .graphiqueCarte {
+                padding-bottom:1000px;
+            }
+            .carteFlex {
+                flex-direction: column;
+                align-items: center;
+            }
+            #map{
+                width: 90%;
+                height: 500px;
+            }
+        .legendeCarte {
+            width: 70%;
+            margin: 20px 0 0 0;
+            padding-left: 40px;
+        }
+        .graphiqueEmpile{
+        width: 90%;
     }
+        }
+
+

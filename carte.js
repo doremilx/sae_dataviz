@@ -3,7 +3,7 @@ let map = L.map('map', {
 /*   attributionControl: false, */
   maxBounds: [[-60, -180], [84, 180]],
   maxBoundsViscosity: 1.0,
-  minZoom: 2,
+  minZoom: 2.2,
   maxZoom: 5,
 }
 ).setView([48.866667, 2.333333], 2.4);
@@ -39,21 +39,21 @@ fetch('data_pays_labubu.json')
 
 
 let petitLabubu = L.icon({
-  iconUrl: 'labubu_marker_rouge.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_rouge.png',
   iconSize: [40, 40], // size of the icon
   iconAnchor: [26, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
 let moyenLabubu = L.icon({
-  iconUrl: 'labubu_marker_bleu.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_bleu.png',
   iconSize: [50, 50], // size of the icon
   iconAnchor: [26, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor
 });
 
 let grandLabubu = L.icon({
-  iconUrl: 'labubu_marker_vert.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_vert.png',
   iconSize: [60, 60], // size of the icon
   iconAnchor: [30, 56], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Databubu</title>
+    <link rel="icon" href="LogoIcone.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -17,8 +18,8 @@
       crossorigin=""
     ></script>
     <script src="https://unpkg.com/esri-leaflet@3/dist/esri-leaflet.js"></script>
-<script src="https://unpkg.com/esri-leaflet-vector@4/dist/esri-leaflet-vector.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-vector@4/dist/esri-leaflet-vector.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
 
   <body>
@@ -33,7 +34,7 @@
           </ul>
         </nav>
       </div>
-      <img src="NewLogo.png" alt="" width="1000" class="logo" />
+      <img src="LogoTitre.png" alt="" width="1000" class="logo" />
       <h1 class="accroche">
         Parce que même les jouets ont leurs courbes de tendance… Découvre la
         popularité de Labubu à travers les données !
@@ -44,37 +45,65 @@
         <img src="labubu-presentation.jpg" alt="" />
         <div>
           <h1>DATABUBU</h1>
-        <p>
-          Databubu est un projet étudiant réalisé par Rémi LIN et Roy NAJARIAN,
-          deux étudiants en deuxième année de BUT Métiers du Multimédia et de
-          l’Internet (MMI). Ce projet de datavisualisation s’intéresse à
-          l’univers des Labubu et explore l’évolution de leur popularité à
-          travers le temps grâce à des graphiques et une carte interactive. 
-          <br> <br>
-          En
-          analysant les tendances de recherche dans le monde, Databubu met en
-          lumière la manière dont un simple jouet peut, à lui seul, devenir un
-          véritable phénomène culturel.
-        </p></div>
+          <p>
+            Databubu est un projet étudiant réalisé par Rémi LIN et Roy
+            NAJARIAN, deux étudiants en deuxième année de BUT Métiers du
+            Multimédia et de l’Internet (MMI). Ce projet de datavisualisation
+            s’intéresse à l’univers des Labubu et explore l’évolution de leur
+            popularité à travers le temps grâce à des graphiques et une carte
+            interactive.
+            <br />
+            <br />
+            En analysant les tendances de recherche dans le monde, Databubu met
+            en lumière la manière dont un simple jouet peut, à lui seul, devenir
+            un véritable phénomène culturel.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="graphiqueCarte">
-      <div id="map"></div>
-      <div class="legendeCarte">
-        <div class="legendes"><img src="labubu_marker_vert.png" alt="" width="60px"> <p>: Forte popularité</p></div>
-        <div class="legendes"><img src="labubu_marker_bleu.png" alt="" width="60px"> <p>: Bonne popularité</p></div>
-        <div class="legendes"><img src="labubu_marker_rouge.png" alt="" width="60px"> <p>: Forte popularité</p></div>
 
-
-      </div>
-    </div>
+    <div class="FondueVertHaut"></div>
+    <div class="graphiquePoints"></div>
+    <div class="FondueVertBas"></div>
 
 <div class="conteneur-empile">
- <div class="graphiqueEmpile">
-<canvas id="myChart"></canvas></div></div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </body>
+  <h1>Comparaison des recherches par rapport aux  marques concurrentes en France</h1>
+      <div class="graphiqueEmpile">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
 
+    <div class="FondueRoseHaut"></div>
+    <div class="graphiqueCarte">
+      <h1>Répartition mondiale de la popularité du mot "Labubu"</h1>
+      <div class="carteFlex">
+        <div class="legendeCarte">
+          <div class="legendes">
+            <img src="MarkersLabubu/labubu_marker_vert.png" alt="" width="60px" />
+            <p>: Forte popularité</p>
+          </div>
+          <div class="legendes">
+            <img src="MarkersLabubu/labubu_marker_bleu.png" alt="" width="60px" />
+            <p>: Bonne popularité</p>
+          </div>
+          <div class="legendes">
+            <img src="MarkersLabubu/labubu_marker_rouge.png" alt="" width="60px" />
+            <p>: Forte popularité</p>
+          </div>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <div class="FondueRoseBas"></div>
+    <footer>
+      <ul>
+        <li> <a href="">Mentions Légales</a></li>
+        <li><a href="">Nous contacter</a></li>
+      </ul>
+    </footer>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>
 </html>
