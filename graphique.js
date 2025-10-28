@@ -1,7 +1,21 @@
-const ctx = document.getElementById('myChart').getContext('2d');
+// Graphique 1 - Ligne montrant l’intérêt de recherche Google pour Labubu à Hong Kong
+const ctxLine = document.getElementById('lineChart').getContext('2d');
+
+const lineChart = new Chart(ctxLine, {
+  type: 'line',
+  data: {
+    labels: ['Octobre 2024', 'Novembre 2024', 'Décembre 2024', 'Janvier 2025', 'Février 2025', 'Mars 2025', 'Avril 2025', 'Mai 2025', 'Juin 2025', 'Juillet 2025', 'Août 2025', 'Septembre 2025', 'Octobre 2025'],
+    datasets: [
+      {}
+    ]
+  },
+});
+
+// Graphique 2 - Histogramme empilé comparant l’intérêt de recherche Google des jouets similaires à Labubu en France
+const ctxBar = document.getElementById('barChart').getContext('2d');
 
 function getLegendPosition() {
-  // 👇 si l'écran est petit, on met la légende en haut
+  // Si l'écran est petit, on met la légende en haut
   if (window.innerWidth < 900) {
     return 'top';
   } else {
@@ -9,7 +23,7 @@ function getLegendPosition() {
   }
 }
 
-const myChart = new Chart(ctx, {
+const barChart = new Chart(ctxBar, {
   type: 'bar',
   data: {
     labels: ['Octobre 2024', 'Novembre 2024', 'Décembre 2024', 'Janvier 2025', 'Février 2025', 'Mars 2025', 'Avril 2025', 'Mai 2025', 'Juin 2025', 'Juillet 2025', 'Août 2025', 'Septembre 2025', 'Octobre 2025'],
@@ -30,11 +44,11 @@ const myChart = new Chart(ctx, {
         text: 'Évolution de l’intérêt de recherche Google des jouets similaires à Labubu (2024-2025)'
       },
       legend: {
-        position: getLegendPosition(), // 👈 position dépendante de la taille d’écran
+        position: getLegendPosition(), // Position dépendante de la taille d’écran
         labels: {
-          usePointStyle: true,
           pointStyle: 'rectRounded',
-          boxWidth: 35,
+          boxWidth: 50,
+          boxHeight: 30,
           padding: 20,
           color: '#333',
           font: {
@@ -47,6 +61,7 @@ const myChart = new Chart(ctx, {
     },
     layout: {
       padding: {
+        left: 40,
         right: 40
       }
     },
@@ -60,6 +75,7 @@ const myChart = new Chart(ctx, {
        },
       y: { stacked: true,
          ticks: {
+          callback: (value) => value + '%',
           font: {
             size: 20,
             family: 'ShineMonday'
@@ -69,11 +85,11 @@ const myChart = new Chart(ctx, {
   }
 });
 
-// 👇 On détecte le redimensionnement de la fenêtre
+// On détecte le redimensionnement de la fenêtre
 window.addEventListener('resize', function() {
   const newPosition = getLegendPosition();
-  if (myChart.options.plugins.legend.position !== newPosition) {
-    myChart.options.plugins.legend.position = newPosition;
-    myChart.update(); // 👈 on met à jour le graphique
+  if (barChart.options.plugins.legend.position !== newPosition) {
+    barChart.options.plugins.legend.position = newPosition;
+    barChart.update(); // On met à jour le graphique
   }
 });
