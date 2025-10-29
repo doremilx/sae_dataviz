@@ -82,6 +82,7 @@ const lineChart = new Chart(ctxLine, {
   options: {
     responsive: true,
     maintainAspectRatio: false,
+    
     plugins: {
       legend: {
         position: getLegendPosition('lineChart'),
@@ -89,16 +90,23 @@ const lineChart = new Chart(ctxLine, {
           boxWidth: 50,
           boxHeight: 25,
           padding: 15,
-        }
-      }
+          color: '#000',
+          font: {
+            size: 30,
+            family: 'ShineMonday',
+            weight: 'bold',
+          },
+        },
+      },
     },
     scales: {
       x: {
-        grid: {color: '##000', lineWidth: 1},
+        grid: {color: '#000', lineWidth: 1},
         border: { color: '#000', width: 2},
         ticks: {
+          color: '#000',
           font: {
-            size: 15,
+            size: 20,
             family: 'ShineMonday'
           }
         }
@@ -109,8 +117,9 @@ const lineChart = new Chart(ctxLine, {
         grid: {color: '#000', lineWidth: 1},
         border: {color: '#000', width: 2},
         ticks: {
+          color: '#000',
           font: {
-            size: 15,
+            size: 20,
             family: 'ShineMonday'
           }
         }
@@ -145,9 +154,9 @@ const barChart = new Chart(ctxBar, {
           boxWidth: 50,
           boxHeight: 30,
           padding: 20,
-          color: '#333',
+          color: '#000',
           font: {
-            size: 32,
+            size: 30,
             family: 'ShineMonday',
             weight: 'bold'
           }
@@ -163,6 +172,7 @@ const barChart = new Chart(ctxBar, {
     scales: {
       x: { stacked: true,
         ticks: {
+          color: '#000',
           font: {
             size: 20,
             family: 'ShineMonday'
@@ -173,6 +183,7 @@ const barChart = new Chart(ctxBar, {
         min: 0,
         max: 100,
          ticks: {
+          color: '#000',
           callback: (value) => value + '%',
           font: {
             size: 20,

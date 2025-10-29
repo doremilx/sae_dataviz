@@ -20,11 +20,8 @@ header {
     background-image: url(FondAccueil.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 135vh;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-    z-index: 1;
+    height: 138vh;
+    position: relative;
 }
 
 p {
@@ -41,6 +38,7 @@ h1 {
     margin-right: auto;
 }   
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -64,11 +62,11 @@ nav a {
     font-size: 1.75rem;
 }
 
-
+/* Présentation */
 .texte-presentation{
-    height: 70vh;
+    height: 75vh;
     font-size: 1.5rem;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .conteneur-presentation{
     width: 75%;
@@ -92,27 +90,28 @@ nav a {
     border-radius: 100px 100px 0px 0px;
 }
 
-
+/* Graphique Points */
 .FondueVertHaut{
     background-image: url(TransitionsPages/TransitionVertHaut.svg);
     height: 91px;
 }
 
 .graphiquePoints{
-    height: 100vh;
+    height: 90vh;
     background-color: #CBD7A8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
-    position: relative;
 }
 
 .conteneur-points h1 {
     background-color: #CBD7A8;
     margin: 0;
+    width: fit-content;
+    padding-top: 15px;
     padding-left: 40px;
+    font-size: 2.8rem;
 }
 
 .graphique {
@@ -125,26 +124,26 @@ nav a {
     height: 91px;
 }
 
+/* Graphique Empilé */
 .conteneur-empile{
-   background-color: #FBF6D1; 
-    height: 100vh;
-    padding-top: 30px
+    height: 95vh;
+    padding-top: 10px;
+    text-align: right;
+}
 
+.conteneur-empile h1 {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
 }
-.conteneur-empile h1{
-width: fit-content;
-margin-left: auto;
-margin-right: 50px;
-margin-bottom: 100px;
-}
+
 .graphiqueEmpile{
     width: 90%;
     height: 500px;
     margin-inline: auto;
 }
 
-
-
+/* Graphique Carte */
 .graphiqueCarte{
     height: 100vh;
     background-color: #E99EA8;
@@ -205,6 +204,7 @@ margin-bottom: 100px;
 }
 
 
+/* Footer */
 footer{
 padding-bottom: 30px;
 }
