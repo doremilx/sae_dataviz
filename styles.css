@@ -89,27 +89,41 @@ nav a {
     background-color: #FBF6D1;
     padding: 0px;
     padding-top: 7px;
-
     border-radius: 100px 100px 0px 0px;
 }
-
-
 
 
 .FondueVertHaut{
     background-image: url(TransitionsPages/TransitionVertHaut.svg);
     height: 91px;
 }
+
 .graphiquePoints{
     height: 100vh;
     background-color: #CBD7A8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
 }
+
+.conteneur-points h1 {
+    background-color: #CBD7A8;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.graphique {
+  width: 90%;
+  height: 600px;
+}
+
 .FondueVertBas{
     background-image: url(TransitionsPages/TransitionVertBas.svg);
     height: 91px;
 }
-
-
 
 .conteneur-empile{
    background-color: #FBF6D1; 
@@ -127,11 +141,7 @@ margin-bottom: 100px;
     width: 90%;
     height: 500px;
     margin-inline: auto;
-    }
-
-
-
-
+}
 
 
 
