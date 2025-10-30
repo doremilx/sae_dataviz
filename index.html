@@ -52,8 +52,8 @@
             s’intéresse à l’univers des Labubu et explore l’évolution de leur
             popularité à travers le temps grâce à des graphiques et une carte
             interactive.
-            <br/>
-            <br/>
+            <br />
+            <br />
             En analysant les tendances de recherche dans le monde, Databubu met
             en lumière la manière dont un simple jouet peut, à lui seul, devenir
             un véritable phénomène culturel.
@@ -63,20 +63,28 @@
     </div>
 
     <div class="FondueVertHaut"></div>
-      <div class="conteneur-points">
-        <h1>Évolution de la recherche "Labubu" en fonction du temps et des premiers pays</h1>
-        <div class="graphiquePoints">
-          <div class="graphique">
-            <canvas id="lineChart"></canvas>
-          </div>
+    <div class="conteneur-points">
+      <h1>
+        Évolution de la recherche "Labubu" en fonction du temps et des premiers
+        pays
+      </h1>
+      <div class="graphiquePoints">
+        <div class="graphique">
+          <canvas id="lineChart"></canvas>
         </div>
       </div>
+    </div>
     <div class="FondueVertBas"></div>
 
     <div class="conteneur-empile">
-      <h1>Comparaison des recherches par rapport aux marques concurrentes en France</h1>
+      <h1>
+        Comparaison des recherches par rapport aux marques concurrentes en
+        France
+      </h1>
+      
       <div class="graphiqueEmpile">
         <canvas id="barChart"></canvas>
+        <img src="imgLabubu/Labubu_deco_barre.png" alt="" class="LabubuDecoEmpile">
       </div>
     </div>
 
@@ -84,20 +92,36 @@
     <div class="graphiqueCarte">
       <h1>Répartition mondiale de la popularité du mot "Labubu"</h1>
       <div class="carteFlex">
+        <div class="columnLegendeCarte">
         <div class="legendeCarte">
           <div class="legendes">
-            <img src="MarkersLabubu/labubu_marker_vert.png" alt="" width="60px" />
+            <img
+              src="MarkersLabubu/labubu_marker_vert.png"
+              alt=""
+              width="60px"
+            />
             <p>: Forte popularité</p>
           </div>
           <div class="legendes">
-            <img src="MarkersLabubu/labubu_marker_bleu.png" alt="" width="60px" />
+            <img
+              src="MarkersLabubu/labubu_marker_bleu.png"
+              alt=""
+              width="60px"
+            />
             <p>: Bonne popularité</p>
           </div>
           <div class="legendes">
-            <img src="MarkersLabubu/labubu_marker_rouge.png" alt="" width="60px" />
+            <img
+              src="MarkersLabubu/labubu_marker_rouge.png"
+              alt=""
+              width="60px"
+            />
             <p>: Forte popularité</p>
           </div>
         </div>
+         <img src="imgLabubu/Labubu_deco_carte.png" class="labubuDecoCarte" alt="" >
+        </div>
+       
         <div id="map"></div>
       </div>
     </div>
@@ -105,11 +129,10 @@
     <footer>
       <a href="#">Databubu</a>
       <ul>
-        <li> <a href="">Mentions Légales</a></li>
+        <li><a href="">Mentions Légales</a></li>
         <li><a href="">Nous contacter</a></li>
       </ul>
     </footer>
-
   </body>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>

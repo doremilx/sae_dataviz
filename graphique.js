@@ -2,7 +2,7 @@ const labelsMois = ['Octobre 2024', 'Novembre 2024', 'Décembre 2024', 'Janvier 
 
 function getLegendPosition(chartId) {
   // Si l'écran est petit, on met la légende en haut
-  if (window.innerWidth < 900) {
+  if (window.innerWidth < 1000) {
     return 'top';
   }
   else {
