@@ -52,8 +52,8 @@
             s’intéresse à l’univers des Labubu et explore l’évolution de leur
             popularité à travers le temps grâce à des graphiques et une carte
             interactive.
-            <br />
-            <br />
+            <br/>
+            <br/>
             En analysant les tendances de recherche dans le monde, Databubu met
             en lumière la manière dont un simple jouet peut, à lui seul, devenir
             un véritable phénomène culturel.
@@ -63,13 +63,22 @@
     </div>
 
     <div class="FondueVertHaut"></div>
-    <div class="graphiquePoints"></div>
+      <div class="conteneur-points">
+        <h1>Évolution de la recherche "Labubu" en fonction du temps et des premiers pays</h1>
+        <div class="graphiquePoints">
+          <div class="legend"></div>
+
+          <div class="graphique">
+            <canvas id="lineChart"></canvas>
+          </div>
+        </div>
+      </div>
     <div class="FondueVertBas"></div>
 
-<div class="conteneur-empile">
-  <h1>Comparaison des recherches par rapport aux  marques concurrentes en France</h1>
+    <div class="conteneur-empile">
+      <h1>Comparaison des recherches par rapport aux marques concurrentes en France</h1>
       <div class="graphiqueEmpile">
-        <canvas id="myChart"></canvas>
+        <canvas id="barChart"></canvas>
       </div>
     </div>
 
@@ -104,7 +113,6 @@
     </footer>
 
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>
 </html>
