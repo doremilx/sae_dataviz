@@ -53,7 +53,7 @@ function courbe(label, paysData, couleur) {
   return {
     label: label,
     data: paysData,
-    hidden: label !== 'Hong Kong', // On affiche uniquement Hong Kong par défaut
+    /* hidden: label !== 'Hong Kong', // On affiche uniquement Hong Kong par défaut */
     fill: true,
     tension: 0.4,
     backgroundColor: couleur,
@@ -71,12 +71,12 @@ const lineChart = new Chart(ctxLine, {
   data: {
     labels: labelsMois,
     datasets: [
-      courbe('Hong Kong', hongKong, couleur.hongKong),
-      courbe('Singapour', singapour, couleur.singapour),
-      courbe('Australie', australie, couleur.australie),
-      courbe('Pologne', pologne, couleur.pologne),
-      courbe('États-Unis', etatsUnis, couleur.etatsUnis),
-      courbe('France', france, couleur.france)
+      courbe('1 : Hong Kong', hongKong, couleur.hongKong),
+      courbe('2 : Singapour', singapour, couleur.singapour),
+      courbe('3 : Australie', australie, couleur.australie),
+      courbe('4 : Pologne', pologne, couleur.pologne),
+      courbe('5 : États-Unis', etatsUnis, couleur.etatsUnis),
+      courbe('40 : France', france, couleur.france)
     ]
   },
   options: {

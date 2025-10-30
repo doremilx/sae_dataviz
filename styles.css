@@ -39,6 +39,10 @@ h1 {
 }   
 
 /* Navigation */
+.top-bar{
+padding-top: 70px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -54,6 +58,7 @@ nav ul {
     border-radius: 100px;
     margin-bottom:100px;
     font-family: BiscuitGlitch;
+    
 }
 
 nav a {
@@ -64,13 +69,13 @@ nav a {
 
 /* Présentation */
 .texte-presentation{
-    height: 75vh;
+    min-height: 75vh;
     font-size: 1.5rem;
     margin-top: 50px;
 }
 .conteneur-presentation{
     width: 75%;
-    margin-inline: auto;
+    margin-inline: auto;    
     display: flex;
     gap: 70px;
 }
@@ -96,9 +101,12 @@ nav a {
     height: 91px;
 }
 
+.conteneur-points{
+    background-color: #CBD7A8;
+}
+
 .graphiquePoints{
     height: 90vh;
-    background-color: #CBD7A8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,17 +114,15 @@ nav a {
 }
 
 .conteneur-points h1 {
-    background-color: #CBD7A8;
     margin: 0;
-    width: fit-content;
     padding-top: 15px;
     padding-left: 40px;
     font-size: 2.8rem;
 }
 
 .graphique {
-  width: 90%;
-  height: 600px;
+  width: 95%;
+  height: 80%;
 }
 
 .FondueVertBas{
@@ -249,7 +255,17 @@ color: blueviolet;}
 
 
 
+  @media (max-width: 1300px) {
 
+
+    .conteneur-presentation{
+        flex-direction: column;
+    }
+    .conteneur-presentation img{
+        width: 400px;
+        margin-inline: auto;
+    }
+  }
 
 
     
