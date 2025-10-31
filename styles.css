@@ -25,11 +25,11 @@ header {
 }
 
 p {
-    font-family: ShineMonday;
+    font-family: ShineMonday, sans-serif;
 }
 
 h1 {
-    font-family: BiscuitGlitch;
+    font-family: BiscuitGlitch, sans-serif;
 }
 
 .logo {
@@ -38,33 +38,65 @@ h1 {
     margin-right: auto;
 }   
 
-/* Navigation */
-.top-bar{
-padding-top: 70px;
+.top-bar {
+    padding-top: 70px;
 }
 
-nav ul {
-    list-style-type: none;
+.menu {
+    display: flex;
+    align-items: center;
+    background: #FBF6D1;
+    border: 2px solid #000;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 10px 30px;
+    font-family: 'BiscuitGlitch', sans-serif;
+}
+
+.menu-left,
+.menu-right {
+    display: flex;
+    gap: 50px;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 70px;
-    background-color: #FBF6D1;
-    width: fit-content;
-    padding-block: 15px;
-    padding-inline: 25px;
-    border: solid black 2px;
-    margin-inline: auto;
-    border-radius: 100px;
-    margin-bottom:100px;
-    font-family: BiscuitGlitch;
-    
 }
 
-nav a {
+.menu a {
     text-decoration: none;
-    color: black;
-    font-size: 1.75rem;
+    color: #000;
+    font-size: 1.8rem;
+    transition: 0.2s ease;
+}
+
+.menu a:hover {
+    text-decoration-line: underline;
+    color: #e4919c;
+}
+
+.menu-logo {
+    width: 140px;
+    margin: 0 60px;
+    position: relative;
+}
+
+/* Logo circulaire au centre du menu */
+.menu-logo::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -65px); 
+    width: 140px;
+    height: 140px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: #FBF6D1;
+    background-image: url("LogoIcone.png");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
 }
 
 /* Présentation */
