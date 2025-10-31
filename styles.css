@@ -38,6 +38,11 @@ h1 {
     margin-right: auto;
 }   
 
+/* Menu de navigation */
+#presentation {
+  scroll-margin-top: 100px;
+}
+
 .top-bar {
     padding-top: 70px;
 }
@@ -73,7 +78,7 @@ h1 {
 
 .menu a:hover {
     text-decoration-line: underline;
-    color: #e4919c;
+    color: #8f58b1;
 }
 
 .menu-logo {
@@ -82,12 +87,10 @@ h1 {
     position: relative;
 }
 
-/* Logo circulaire au centre du menu */
 .menu-logo::before {
-    content: "";
+    content: ""; /* rend visible le pseudo-élément */
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -65px); 
+    transform: translate(0, -65px); 
     width: 140px;
     height: 140px;
     border: 2px solid #000;
@@ -195,10 +198,10 @@ transition: all 1s ease-in-out;
     background-color: #E99EA8;
 }
 .graphiqueCarte h1{
-    width: 60%;
     margin: 0;
-    padding-top: 50px;
-    margin-left: 50px;
+    padding-top: 15px;
+    margin-left: 40px;
+    font-size: 2.8rem;
 }
 
 #map {
@@ -303,7 +306,7 @@ footer ul li a{
 
 footer ul li a:hover{
 text-decoration-line: underline;
-color: blueviolet;}
+color: #8f58b1;}
 
 
 

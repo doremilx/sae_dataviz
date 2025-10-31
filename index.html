@@ -28,15 +28,15 @@
       <div class="top-bar">
         <nav class="menu">
           <ul class="menu-left">
-            <li><a href="#">Présentation</a></li>
-            <li><a href="#">Évolution</a></li>
+            <li><a href="#" data-target="presentation">Présentation</a></li>
+            <li><a href="#" data-target="evolution">Évolution</a></li>
           </ul>
 
           <div class="menu-logo"></div>
 
           <ul class="menu-right">
-            <li><a href="#">Comparaison</a></li>
-            <li><a href="#">Vue mondiale</a></li>
+            <li><a href="#" data-target="comparaison">Comparaison</a></li>
+            <li><a href="#" data-target="vue-mondiale">Vue mondiale</a></li>
           </ul>
         </nav>
       </div>
@@ -47,7 +47,7 @@
         popularité de Labubu à travers les données !
       </h1>
     </header>
-    <div class="texte-presentation">
+    <div class="texte-presentation" id="presentation">
       <div class="conteneur-presentation">
         <img src="labubu-presentation.jpg" alt="" />
         <div>
@@ -70,11 +70,8 @@
     </div>
 
     <div class="FondueVertHaut"></div>
-    <div class="conteneur-points">
-      <h1>
-        Évolution de la recherche "Labubu" en fonction du temps et des premiers
-        pays
-      </h1>
+    <div class="conteneur-points" id="evolution">
+      <h1>Évolution de la recherche "Labubu" en fonction du temps et des premiers pays</h1>
       <div class="graphiquePoints">
         <div class="graphique">
           <canvas id="lineChart"></canvas>
@@ -83,11 +80,8 @@
     </div>
     <div class="FondueVertBas"></div>
 
-    <div class="conteneur-empile">
-      <h1>
-        Comparaison des recherches par rapport aux marques concurrentes en
-        France
-      </h1>
+    <div class="conteneur-empile" id="comparaison">
+      <h1>Comparaison des recherches par rapport aux marques concurrentes en France</h1>
       
       <div class="graphiqueEmpile">
         <canvas id="barChart"></canvas>
@@ -96,7 +90,7 @@
     </div>
 
     <div class="FondueRoseHaut"></div>
-    <div class="graphiqueCarte">
+    <div class="graphiqueCarte" id="vue-mondiale">
       <h1>Répartition mondiale de la popularité du mot "Labubu"</h1>
       <div class="carteFlex">
         <div class="columnLegendeCarte">
@@ -143,4 +137,5 @@
   </body>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>
+  <script src="fonction.js"></script>
 </html>
