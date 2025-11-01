@@ -1,7 +1,7 @@
 function defilement() {
     const navLiens = document.querySelectorAll('nav a');
 
-    navLiens.forEach(function(lien) {
+    navLiens.forEach(lien=> {
         lien.addEventListener('click', function(event) {
             event.preventDefault(); // Empêche le comportement par défaut du lien
             
