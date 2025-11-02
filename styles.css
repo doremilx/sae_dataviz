@@ -217,7 +217,7 @@ h1 {
 
 /* Graphique Carte */
 .graphiqueCarte {
-    height: 100vh;
+    height: 110vh;
     background-color: #E99EA8;
 }
 .graphiqueCarte h1 {
@@ -270,7 +270,6 @@ h1 {
 }
 
 .labubuDecoCarte {
-    width: clamp(280px, 90%, 460px);
     height: auto;
     position: static;
 }
@@ -319,7 +318,7 @@ footer h1 img {
     transform: translateY(-10px);
 }
 
-footer a {
+footer button {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -327,9 +326,13 @@ footer a {
     font-size: 2rem;
     text-decoration: none;
     color: #000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
-footer a:hover {
+footer button:hover {
     text-decoration-line: underline;
     color: #8f58b1;
 }
@@ -352,16 +355,70 @@ footer ul li {
     margin-top: 10px;
 }
 
-footer ul li a {
+footer ul li button {
     text-decoration: none;
     color: black;
 }
 
-footer ul li a:hover {
+footer ul li button:hover {
     text-decoration-line: underline;
     color: #8f58b1;
 }
 
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+}
+
+.popup-overlay.open {
+    display: flex;
+}
+
+.popup-content {
+    background-color: #fff;
+    border-radius: 20px;
+   
+    box-shadow: 0 0 0 6px #FBF6D1, 0 0 0 12px #CBD7A8, 0 0 0 18px #E99EA8;
+
+    padding: 40px 30px;
+    width: 80%;
+    position: relative;
+    font-family: 'BiscuitGlitch', Courier, monospace;
+}
+
+.popup-content h2 {
+    font-size: 2rem;
+}
+
+.popup-content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.popup-content button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'BiscuitGlitch', Courier, monospace;
+    cursor: pointer;
+    transition: 0,2s ease;
+}
+
+.popup-content button:hover {
+    color: #8f58b1;
+}
 
 @media (max-width: 1300px) {
 
@@ -374,7 +431,6 @@ footer ul li a:hover {
         margin-inline: auto;
     }
   }
-
 
     
 @media (max-width: 1200px) {

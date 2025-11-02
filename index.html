@@ -50,17 +50,15 @@
         <div>
           <h1>DATABUBU</h1>
           <p>
-            Databubu est un projet étudiant réalisé par Rémi LIN et Roy
-            NAJARIAN, deux étudiants en deuxième année de BUT Métiers du
-            Multimédia et de l’Internet (MMI). Ce projet de datavisualisation
-            s’intéresse à l’univers des Labubu et explore l’évolution de leur
-            popularité à travers le temps grâce à des graphiques et une carte
-            interactive.
-            <br />
-            <br />
-            En analysant les tendances de recherche dans le monde, Databubu met
-            en lumière la manière dont un simple jouet peut, à lui seul, devenir
-            un véritable phénomène culturel.
+            Databubu retrace l’évolution des recherches autour du mot “Labubu” en France 
+            et dans le monde à travers des graphiques interactifs et une carte dynamique.
+            En s’appuyant sur les données de recherche, le site met en lumière la manière 
+            dont un simple jouet de collection a su captiver l’attention du public et 
+            devenir un phénomène culturel mondial.
+            <br/>
+            <br/>
+            Databubu offre ainsi une lecture visuelle et ludique de cette popularité, révélant 
+            comment une tendance peut naître, se propager et marquer durablement la culture populaire.
           </p>
         </div>
       </div>
@@ -68,7 +66,7 @@
 
     <div class="FondueVertHaut"></div>
     <div class="conteneur-points" id="evolution">
-      <h1>Évolution de la recherche "Labubu" en fonction du temps et des premiers pays</h1>
+      <h1>Évolution de la recherche “Labubu” selon le temps et les pays les plus populaires</h1>
       <div class="graphiquePoints">
         <div class="graphique">
           <canvas id="lineChart"></canvas>
@@ -78,7 +76,7 @@
     <div class="FondueVertBas"></div>
 
     <div class="conteneur-empile" id="comparaison">
-      <h1>Comparaison des recherches par rapport aux marques concurrentes en France</h1>
+      <h1>Comparaison de la recherche du mot "Labubu" et ses concurrents en France</h1>
       
       <div class="graphiqueEmpile">
         <canvas id="barChart"></canvas>
@@ -128,10 +126,27 @@
     <footer>
       <h1><img src="LogoIcone.png" alt="logo">Databubu</h1>
       <ul>
-        <li><a href="">Mentions Légales</a></li>
-        <li><a href="">Nous contacter</a></li>
+        <li><button type="button" onclick="togglePopup('mentions')">Mentions Légales</button></li>
+        <li><button type="button" onclick="togglePopup('contact')">Nous contacter</button></li>
       </ul>
     </footer>
+    
+    <div id="popup-mentions" class="popup-overlay">
+      <div class="popup-content">
+        <h2>Mentions Légales</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi.</p>
+        <button type="button" onclick="togglePopup('mentions')">Fermer</button>
+      </div>
+    </div>
+
+    <div id="popup-contact" class="popup-overlay">
+      <div class="popup-content">
+        <h2>Nous contacter</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi.</p>
+        <button type="button" onclick="togglePopup('contact')">Fermer</button>
+      </div>
+    </div>
+    
   </body>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>

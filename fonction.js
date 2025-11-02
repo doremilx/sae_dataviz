@@ -1,3 +1,14 @@
+function togglePopup(nom) {
+    let popup = document.getElementById("popup-" + nom);
+    popup.classList.toggle("open");
+
+    popup.addEventListener("click", function(event) {
+        if (event.target === popup) {
+            popup.classList.remove("open");
+        }
+    });
+}
+
 function defilement() {
     const navLiens = document.querySelectorAll('nav a');
 
