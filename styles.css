@@ -21,7 +21,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    min-height: 130vh;
+    min-height: 140vh;
     padding-bottom: clamp(200px, 50vw, 350px);
 }
 
@@ -41,7 +41,8 @@ h1 {
 
 /* Menu de navigation */
 #presentation {
-  scroll-margin-top: 150px;
+height: 90vh;
+align-content: center;
 }
 
 .top-bar {
@@ -139,7 +140,7 @@ h1 {
 .accroche::after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: 99%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -271,11 +272,15 @@ h1 {
 
 .labubuDecoCarte {
     height: auto;
-    position: static;
+    position:static;
 }
 
 .legendes {
     display: flex;
+}
+.legendes img{
+    max-width: 60px;
+    max-height: 63px;
 }
 
 .legendeCarte p {
@@ -448,7 +453,7 @@ footer ul li button:hover {
     .legendeCarte {
         width: 70%;
         margin:0;
-        padding-left: 40px;
+        padding-inline: 40px;
         align-self: center;
     }
      .columnLegendeCarte{
@@ -473,5 +478,13 @@ footer ul li button:hover {
     top: 150px;
    left: 60px;
    transform: scaleX(-1);
+}
+}
+
+@media (max-width: 600px) {
+
+.LabubuDecoEmpile{
+    top: 280px;
+    left: 40px;
 }
 }
