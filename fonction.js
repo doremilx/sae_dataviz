@@ -29,3 +29,21 @@ function defilement() {
 }
 
 document.addEventListener('DOMContentLoaded', defilement);
+
+/* Labubu Yeux qui bougent */
+
+document.addEventListener("mousemove", (e) => {
+  const yeux = document.querySelectorAll(".pupille");
+  yeux.forEach(pupille => {
+    const rect = pupille.parentElement.getBoundingClientRect();
+    const x = e.clientX - (rect.left + rect.width / 2);
+    const y = e.clientY - (rect.top + rect.height / 2);
+    const angle = Math.atan2(y, x);
+    const distance = Math.min(10, Math.hypot(x, y) / 20); // limite le déplacement
+
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+
+    pupille.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+});

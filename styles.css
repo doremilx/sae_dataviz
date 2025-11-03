@@ -39,6 +39,51 @@ h1 {
     margin-right: auto;
 }   
 
+.labubu {
+  position: absolute;
+  width: 500px; 
+  right: 0px;
+  top: 400px;
+}
+
+.labubu .tete {
+  width: 100%;
+  display: block;
+}
+
+.oeil {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.oeil-gauche {
+  top: 215px;
+  left: 188px;
+  rotate: -10deg;
+}
+
+.oeil-droit {
+  top: 200px;
+  right: 200px;
+  rotate: -10deg;
+}
+
+.pupille {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.05s linear;
+
+}
+
 /* Menu de navigation */
 #presentation {
 height: 90vh;
@@ -242,7 +287,7 @@ align-content: center;
     width: 90%;
     margin-left: 20px;
     margin-top: 60px;
-    background-color: #B4C6FF;
+    background-color:#FBF6D1;
     border-radius: 30px;
 
     padding: 15px;
