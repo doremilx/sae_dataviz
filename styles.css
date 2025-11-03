@@ -232,7 +232,7 @@ align-content: center;
     height: 700px;
     width: 70%;
     border-radius: 30px;
-    border: black 1px solid;
+
     margin-left: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     margin-top: 40px;
@@ -244,7 +244,7 @@ align-content: center;
     margin-top: 60px;
     background-color: #B4C6FF;
     border-radius: 30px;
-    border: black 1px solid;
+
     padding: 15px;
     font-family: ShineMonday;
     font-size: 1.2rem;
