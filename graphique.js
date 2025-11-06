@@ -132,7 +132,7 @@ scales: {
         family: 'ShineMonday',
         weight: 'bold'
       },
-      padding: { bottom: 10 }
+      padding: {top: 30,bottom: 10 }
     }
   }
 }
