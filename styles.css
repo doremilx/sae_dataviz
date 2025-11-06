@@ -35,8 +35,10 @@ h1 {
 
 .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
+    max-width: 70vw;
+    width: 100%;
+    min-width: 350px;
 }   
 
 .labubu {
@@ -194,6 +196,52 @@ align-content: center;
     background-image: url("TransitionsPages/TransitionAccroche3.svg");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+/* Ccaroussel des labubus */
+.FondueVioletHaut{
+ background-image: url(TransitionsPages/TransitionVioletHaut.svg);
+    height: 91px;
+}
+.caroussel_labubu{
+    height: 100vh;
+    background-color: #debcf4;
+}
+.FondueVioletBas{
+ background-image: url(TransitionsPages/TransitionVioletBas.svg);
+    height: 91px;
+}
+
+/* Histoire des Labubus */
+
+.histoire_labubu{
+    padding-top: 100px;
+    height: 100vh;
+    align-content: center;
+    margin-bottom: 100px;
+}
+
+.conteneur_histoire{
+
+    width: 70%;
+    margin-inline: auto;
+    font-size: 1.5rem;
+
+}
+
+.conteneur_histoire img{
+    width: 50vw;
+    min-width: 100%;
+
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+    
+}
+.img_histoire{
+    min-height: min-content;
+    margin-inline: auto;
+    width: min-content;
+    margin-block: 100px;
 }
 
 /* Graphique Points */
