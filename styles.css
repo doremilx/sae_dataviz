@@ -88,7 +88,8 @@ h1 {
 
 /* Menu de navigation */
 #presentation {
-height: 90vh;
+min-height: 90vh;
+height: fit-content;
 align-content: center;
 }
 
@@ -159,7 +160,7 @@ align-content: center;
 }
 
 .conteneur-presentation{
-    width: 75%;
+    width: 80%;
     margin-inline: auto;    
     display: flex;
     gap: 70px;
@@ -197,39 +198,22 @@ align-content: center;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-/* Ccaroussel des labubus */
-.FondueVioletHaut{
- background-image: url(TransitionsPages/TransitionVioletHaut.svg);
-    height: 91px;
-}
-.caroussel_labubu{
-    height: 100vh;
-    background-color: #debcf4;
-}
-.FondueVioletBas{
- background-image: url(TransitionsPages/TransitionVioletBas.svg);
-    height: 91px;
-}
+
 
 /* Histoire des Labubus */
 
-.histoire_labubu{
-    padding-top: 100px;
-    height: 100vh;
-    align-content: center;
-    margin-bottom: 100px;
-}
+
 
 .conteneur_histoire{
-
-    width: 70%;
+display: flex;
+    width: 80%;
     margin-inline: auto;
     font-size: 1.5rem;
-
+gap: 40px;
 }
 
 .conteneur_histoire img{
-    width: 50vw;
+    width: 35vw;
     min-width: 100%;
 
     border-radius: 50px;
@@ -242,6 +226,7 @@ align-content: center;
     margin-inline: auto;
     width: min-content;
     margin-block: 100px;
+    align-content:end;
 }
 
 /* Graphique Points */
@@ -335,7 +320,7 @@ align-content: center;
     width: 90%;
     margin-left: 20px;
     margin-top: 60px;
-    background-color:#FBF6D1;
+    background-color:#B4C6FF;
     border-radius: 30px;
 
     padding: 15px;
@@ -517,6 +502,19 @@ footer ul li button:hover {
 .popup-content button:hover {
     color: #8f58b1;
 }
+
+
+@media (max-width: 1300px) {
+.conteneur_histoire{
+    flex-direction:column-reverse;
+}
+.img_histoire{
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 300px;
+}
+}
+
 
 @media (max-width: 1300px) {
 
