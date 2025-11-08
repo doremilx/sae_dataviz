@@ -117,23 +117,14 @@ scales: {
     grid: { color: '#000', lineWidth: 1 },
     border: { color: '#000', width: 2 },
     ticks: {
+      callback: (value) => value + "%",
       color: '#000',
       font: {
         size: 20,
         family: 'ShineMonday'
       }
     },
-    title: {
-      display: true,
-      text: 'Pourcentage (%)',
-      color: '#000',
-      font: {
-        size: 22,
-        family: 'ShineMonday',
-        weight: 'bold'
-      },
-      padding: {top: 30,bottom: 10 }
-    }
+    
   }
 }
   }

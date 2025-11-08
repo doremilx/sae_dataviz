@@ -74,7 +74,11 @@ h1 {
   right: 195px;
 
 }
-
+@keyframes gradientAnim {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 .pupille {
   position: absolute;
   top: 10px;
@@ -84,6 +88,11 @@ h1 {
   background: #000;
   border-radius: 50%;
   transition: 0.05s linear;
+  /*  */
+  background: linear-gradient(45deg, red, rgb(118, 118, 255), rgb(126, 255, 126), rgb(255, 122, 122));
+    background-size: 400% 400%;
+    animation: gradientAnim 8s ease infinite;
+    /*  */
 }
 
 /* Menu de navigation */
@@ -150,6 +159,38 @@ align-content: center;
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
+}
+
+
+.remonte_page{
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-family: BiscuitGlitch;
+    background-color: rgba(255, 0, 0, 0);
+    border-radius: 100px;
+    z-index: 100;
+    background-image: url(imgLabubu/labubu_pointe_top.png);
+    background-position: center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+     opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, scale 0.1s ease-in-out;;
+  
+    pointer-events: none; /* évite les clics quand invisible */
+}
+
+.remonte_page.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.remonte_page:hover{
+    scale: 1.05;
 }
 
 /* Présentation */
@@ -390,7 +431,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 0px 30px 30px;
+   padding-top: 30px;
+    border: #FBF6D1 solid;
 }
 
 footer h1 {
@@ -420,6 +462,7 @@ footer button {
     border: none;
     cursor: pointer;
     transition: 0.2s ease;
+  
 }
 
 footer button:hover {
@@ -439,6 +482,7 @@ footer ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+      z-index: 10;
 }
 
 footer ul li {
@@ -453,6 +497,14 @@ footer ul li button {
 footer ul li button:hover {
     text-decoration-line: underline;
     color: #8f58b1;
+}
+
+.labubu_deco_allonge{
+    position: absolute;
+    bottom: 0.5;
+    z-index: 10000;
+    left: 60%;
+    transform: translateX(-50%);
 }
 
 .popup-overlay {
@@ -604,6 +656,27 @@ footer ul li button:hover {
    transform: scaleX(-1);
 }
 }
+@media (max-width: 900px) {
+.labubu_deco_allonge{
+    z-index: 1;
+    opacity: 50%;
+}
+
+
+
+}
+
+
+@media (max-width: 800px) {
+footer h1{
+    font-size: 2rem;
+}
+footer ul li button{
+    font-size: 1.7rem;
+}
+
+}
+
 
 @media (max-width: 600px) {
 
@@ -611,4 +684,5 @@ footer ul li button:hover {
     top: 280px;
     left: 40px;
 }
+
 }

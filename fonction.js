@@ -47,3 +47,36 @@ document.addEventListener("mousemove", (e) => {
     pupille.style.transform = `translate(${moveX}px, ${moveY}px)`;
   });
 });
+
+document.querySelector('.remonte_page').addEventListener('click', function(test){
+    const CibleLogo = document.querySelector('.logo');
+    document.querySelector('body').scrollIntoView({behavior: 'smooth'})
+})
+
+
+window.addEventListener("scroll", function () {
+    var positionY = window.scrollY; // position verticale actuelle du scroll
+    var bouton = document.querySelector(".remonte_page");
+    if (positionY > 500) {
+        bouton.classList.add('visible');
+    } else {
+        bouton.classList.remove('visible');
+}
+
+    var footer = document.querySelector('footer');
+
+    // Position du footer par rapport à l'écran
+    var footerPosition = footer.getBoundingClientRect().top;
+
+    // Hauteur de la fenêtre
+    var windowHeight = window.innerHeight;
+
+    // Si le footer apparaît dans l'écran
+    if (footerPosition < windowHeight) {
+        bouton.style.right = '350px';
+    } else {
+        bouton.style.right = '';
+    }
+});
+
+
