@@ -22,17 +22,17 @@ fetch('data_pays_labubu.json')
     data.forEach((item) => {
       if (item.valeur > 0 && item.valeur <= 25) {
         let marker = L.marker([item.latitude, item.longitude], { icon: petitLabubu }).addTo(map);
-        marker.bindPopup("<h1>" + item.pays + "</h1>" + item.valeur + "<br>" + item.latitude + " " + item.longitude);
+        marker.bindPopup("<h1 style='font-size:2.3em'>" + item.pays + "</h1>" + "<p style='font-size:1.5em; margin-top:10px'>Le mot \"Labubu\" représente <strong style='color:red'>"  + item.valeur + "% </strong> des recherhes Google de ce pays.</p>");
       }
 
       else if (item.valeur > 25 && item.valeur < 75) {
         let marker = L.marker([item.latitude, item.longitude], { icon: moyenLabubu }).addTo(map);
-        marker.bindPopup("<h1>" + item.pays + "</h1>" + item.valeur + "<br>" + item.latitude + " " + item.longitude);
+        marker.bindPopup("<h1 style='font-size:2.3em'>" + item.pays + "</h1>" + "<p style='font-size:1.5em; margin-top:10px'>Le mot \"Labubu\" représente <strong style='color:red'>"  + item.valeur + "% </strong> des recherhes Google de ce pays.</p>");
       }
 
       else {
         let marker = L.marker([item.latitude, item.longitude], { icon: grandLabubu }).addTo(map);
-        marker.bindPopup("<h1>" + item.pays + "</h1>" + item.valeur + "<br>" + item.latitude + " " + item.longitude);
+        marker.bindPopup("<h1 style='font-size:2.3em'>" + item.pays + "</h1>" + "<p style='font-size:1.5em; margin-top:10px'>Le mot \"Labubu\" représente <strong style='color:red'>"  + item.valeur + "% </strong> des recherhes Google de ce pays.</p>");
       }
     })
   });
@@ -46,7 +46,7 @@ let petitLabubu = L.icon({
 });
 
 let moyenLabubu = L.icon({
-  iconUrl: 'MarkersLabubu/labubu_marker_bleu - Copie.png',
+  iconUrl: 'MarkersLabubu/labubu_marker_bleu2.png',
   iconSize: [50, 50], // size of the icon
   iconAnchor: [26, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -35] // point from which the popup should open relative to the iconAnchor
