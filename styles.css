@@ -45,8 +45,10 @@ h1 {
 
 .labubu {
     position: absolute;
-    width: 500px; 
-    right: -80px;
+    width: 500px;
+    max-width: 100%;
+
+right: 0;
     top: 450px;
 }
 
@@ -209,6 +211,7 @@ h1 {
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     height: min-content;
+    max-width: 100%;
 }
 
 .accroche-container {
