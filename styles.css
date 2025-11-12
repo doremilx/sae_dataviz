@@ -9,7 +9,8 @@
 }
 
 *, *::before, *::after {
-box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 body {
     background-color: #FBF6D1;
@@ -43,24 +44,24 @@ h1 {
 }   
 
 .labubu {
-  position: absolute;
-  width: 500px; 
-  right: -80px;
-  top: 450px;
+    position: absolute;
+    width: 500px; 
+    right: -80px;
+    top: 450px;
 }
 
 .labubu .tete {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 .oeil {
-  position: absolute;
-  width: 40px;
-  height: 55px;
-  background: #fff;
-  border-radius: 50%;
-  overflow: hidden;
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .oeil-gauche {
@@ -72,34 +73,33 @@ h1 {
 .oeil-droit {
   top: 180px;
   right: 195px;
-
 }
+
 @keyframes gradientAnim {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
 .pupille {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 20px;
-  height: 30px;
-  background: #000;
-  border-radius: 50%;
-  transition: 0.05s linear;
-  /*  */
-  background: linear-gradient(45deg, red, rgb(118, 118, 255), rgb(126, 255, 126), rgb(255, 122, 122));
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    transition: 0.05s linear;
+    background: linear-gradient(45deg, red, rgb(118, 118, 255), rgb(126, 255, 126), rgb(255, 122, 122));
     background-size: 400% 400%;
     animation: gradientAnim 8s ease infinite;
-    /*  */
 }
 
 /* Menu de navigation */
 #presentation {
-min-height: 90vh;
-height: fit-content;
-align-content: center;
+    min-height: 90vh;
+    height: fit-content;
+    align-content: center;
 }
 
 .top-bar {
@@ -161,13 +161,11 @@ align-content: center;
     background-repeat: no-repeat;
 }
 
-
-.remonte_page{
+.remonte_page {
     display: block;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 50px;
-    font-family: BiscuitGlitch;
     background-color: rgba(255, 0, 0, 0);
     border-radius: 100px;
     z-index: 100;
@@ -176,10 +174,9 @@ align-content: center;
     background-size: contain;
     height: 100px;
     width: 100px;
-     opacity: 0;
+    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease, scale 0.1s ease-in-out;;
-  
     pointer-events: none; /* évite les clics quand invisible */
 }
 
@@ -431,7 +428,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding-top: 30px;
+    padding-top: 30px;
     border: #FBF6D1 solid;
 }
 
@@ -527,16 +524,40 @@ footer ul li button:hover {
 
 .popup-content {
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 0 6px #FBF6D1, 0 0 0 12px #CBD7A8, 0 0 0 18px #E99EA8;
-    padding: 40px 30px;
+    padding: 10px 30px;
     width: 80%;
+    height: 60vh;
+    overflow-y: auto;
     position: relative;
     font-family: 'BiscuitGlitch', Courier, monospace;
 }
 
+.popup-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: #8f58b1;
+    border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
 .popup-content h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+}
+
+.popup-content h3 {
+    font-size: 1.6rem;
+}
+
+.link {
+    color: #8f58b1;
 }
 
 .popup-content p {
@@ -562,36 +583,24 @@ footer ul li button:hover {
 
 
 @media (max-width: 1300px) {
-.conteneur_histoire{
-    flex-direction:column-reverse;
-}
-.img_histoire{
-        width: 100%;
-        margin-bottom: 0;
-        margin-top: 300px;
-}
-}
-
-
-@media (max-width: 1300px) {
-
-
-    .conteneur-presentation{
+    .conteneur-presentation {
         flex-direction: column;
     }
-    .conteneur-presentation img{
+    .conteneur-presentation img {
         width: 400px;
         margin-inline: auto;
     }
 
-    .labubu{
+    .labubu {
         width: 300px;
     }
-    .oeil{
+
+    .oeil {
         height: 35px;
         width: 25px;
     }
-    .oeil-gauche{
+
+    .oeil-gauche {
         top: 105px;
         left: 110px;
     }
@@ -600,41 +609,57 @@ footer ul li button:hover {
         top: 105px;
         right: 117px;
     }
-.pupille{
-    width: 15px;
-    height: 25px;
-}
+
+    .pupille {
+        width: 15px;
+        height: 25px;
+    }
+        
+    .conteneur_histoire {
+        flex-direction:column-reverse;
+    }
+
+    .img_histoire {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 300px;
+    }
   }
 
     
 @media (max-width: 1200px) {
     .graphiqueCarte {
         padding-bottom:1000px;
-        }
+    }
+
     .carteFlex {
         flex-direction: column;
         align-items: center;
-        }
-    #map{
+    }
+
+    #map {
         width: 90%;
         height: 500px;
-        }
+    }
+
     .legendeCarte {
         width: 70%;
         margin:0;
         padding-inline: 40px;
         align-self: center;
     }
-     .columnLegendeCarte{
+
+    .columnLegendeCarte {
         padding-top: 50px;
         flex-direction:row-reverse;
         width: 80%;
         gap: 0;
-     }
-     .labubuDecoCarte{
+    }
+
+    .labubuDecoCarte {
         width: 300px;
         height: 300px;
-     }
+    }
 }
 
 @media (max-width: 1100px) {
@@ -645,44 +670,39 @@ footer ul li button:hover {
 }
 
 @media (max-width: 1000px) {
-        .graphiqueEmpile{
-    width: 90%;
+    .graphiqueEmpile{
+        width: 90%;
     }
-.LabubuDecoEmpile{
-    width: 100px;
-    height: 140px;
-    top: 150px;
-   left: 60px;
-   transform: scaleX(-1);
+
+    .LabubuDecoEmpile{
+        width: 100px;
+        height: 140px;
+        top: 150px;
+        left: 60px;
+        transform: scaleX(-1);
+    }
 }
-}
+
 @media (max-width: 900px) {
-.labubu_deco_allonge{
-    z-index: 1;
-    opacity: 50%;
+    .labubu_deco_allonge{
+        z-index: 1;
+        opacity: 50%;
+    }
 }
-
-
-
-}
-
 
 @media (max-width: 800px) {
-footer h1{
-    font-size: 2rem;
-}
-footer ul li button{
-    font-size: 1.7rem;
-}
+    footer h1{
+        font-size: 2rem;
+    }
 
+    footer ul li button{
+        font-size: 1.7rem;
+    }
 }
-
 
 @media (max-width: 600px) {
-
-.LabubuDecoEmpile{
-    top: 280px;
-    left: 40px;
-}
-
+    .LabubuDecoEmpile{
+        top: 280px;
+        left: 40px;
+    }
 }

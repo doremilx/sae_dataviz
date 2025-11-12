@@ -31,7 +31,6 @@ function defilement() {
 document.addEventListener('DOMContentLoaded', defilement);
 
 /* Labubu Yeux qui bougent */
-
 document.addEventListener("mousemove", (e) => {
   const yeux = document.querySelectorAll(".pupille");
   yeux.forEach(pupille => {
@@ -55,27 +54,26 @@ document.querySelector('.remonte_page').addEventListener('click', function(test)
 
 
 window.addEventListener("scroll", function () {
-    var positionY = window.scrollY; // position verticale actuelle du scroll
-    var bouton = document.querySelector(".remonte_page");
+    let positionY = window.scrollY; // position verticale actuelle du scroll
+    let bouton = document.querySelector(".remonte_page");
+    let footer = document.querySelector('footer');
+    let windowHeight = window.innerHeight; // Hauteur de la fenêtre
+
     if (positionY > 500) {
         bouton.classList.add('visible');
-    } else {
+    } 
+    else {
         bouton.classList.remove('visible');
-}
+    }
 
-    var footer = document.querySelector('footer');
+    let footerTop = footer.getBoundingClientRect().top + window.scrollY;
+    let distanceFooter = footerTop - (positionY + windowHeight);
 
-    // Position du footer par rapport à l'écran
-    var footerPosition = footer.getBoundingClientRect().top;
-
-    // Hauteur de la fenêtre
-    var windowHeight = window.innerHeight;
-
-    // Si le footer apparaît dans l'écran
-    if (footerPosition < windowHeight) {
-        bouton.style.right = '350px';
-    } else {
-        bouton.style.right = '';
+    if (distanceFooter < 0) {
+        bouton.style.bottom = Math.abs(distanceFooter) + -50 + "px";
+    } 
+    else {
+        bouton.style.bottom = "50px";
     }
 });
 
