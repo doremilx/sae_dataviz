@@ -211,8 +211,9 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
 
         <h3>Sources :</h3>
         <p>
-          Tous les visuels présentés sur ce site sont utilisés dans le cadre d’un projet étudiant à but non commercial. Les marques et éléments visuels cités demeurent la propriété 
-          exclusive de leurs titulaires respectifs.
+          Tous les visuels présentés sur ce site sont utilisés dans le cadre d’un projet étudiant à but non commercial. La marques et éléments visuels présent demeurent la propriété 
+          exclusive de leurs titulaires respectifs. A l’exception du logo, des images utilisées pour le fond ou encore des images présent sur la carte, la totalité des images 
+          proviennent du site officiel de POP MART
         </p>
 
 
@@ -221,15 +222,33 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
           Les polices “Biscuit Glitch” et “Shine Monday” sont utilisées dans le cadre d’un projet étudiant non commercial hébergé sur GitHub. Leur usage est conforme aux conditions 
           de licence établies par leurs créateurs respectifs.
         </p>
-        <button type="button" onclick="togglePopup('mentions')">Fermer</button>
+        <button type="button" class="fermer" onclick="togglePopup('mentions')">Fermer</button>
       </div>
     </div>
 
     <div id="popup-contact" class="popup-overlay">
-      <div class="popup-content">
+      <div class="popup-content popup-contact-content">
         <h2>Nous contacter</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui dolor, commodo et enim luctus, ultricies vehicula nisi.</p>
-        <button type="button" onclick="togglePopup('contact')">Fermer</button>
+        <div class="container">
+          <div class="personne">
+            <h3>Roy NAJARIAN</h3>
+            <p>
+              <a href="https://github.com/RoyNajarian" target="_blank">Github</a>
+              <a href="https://www.linkedin.com/in/roynajarian/" target="_blank">Linkedin</a>
+              <a href="mailto:roynajarian@gmail.com" target="_blank">roynajarian@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="personne">
+            <h3>Rémi LIN</h3>
+            <p>
+              <a href="https://github.com/doremilx" target="_blank">Github</a>
+              <a href="https://www.linkedin.com/in/r%C3%A9mi-l-8856a9330/" target="_blank">Linkedin</a>
+              <a href="mailto:" target="_blank">remilin@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <button type="button" class="fermer" onclick="togglePopup('contact')">Fermer</button>
       </div>
     </div>
     

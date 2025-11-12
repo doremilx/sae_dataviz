@@ -178,6 +178,7 @@ h1 {
     transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease, scale 0.1s ease-in-out;;
     pointer-events: none; /* évite les clics quand invisible */
+    z-index: 1000;
 }
 
 .remonte_page.visible {
@@ -565,7 +566,7 @@ footer ul li button:hover {
     line-height: 1.4;
 }
 
-.popup-content button {
+.popup-content .fermer {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -577,10 +578,67 @@ footer ul li button:hover {
     transition: 0,2s ease;
 }
 
-.popup-content button:hover {
+.popup-content .fermer:hover {
     color: #8f58b1;
 }
 
+
+.popup-contact-content {
+    width: 50%;
+    height: 40vh;
+}
+
+.popup-contact-content .container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.popup-contact-content .personne {
+    border: 2px solid #8f58b1;
+    border-radius: 14px;
+    padding: 18px 22px;
+    width: 300px;
+    transition: 0.2s ease;
+}
+
+.popup-contact-content .personne:hover {
+    transform: translateY(-3px);
+    border-color: #a56bc7;
+}
+
+.popup-contact-content .personne h3 {
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+.popup-contact-content .personne p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+
+.popup-contact-content .personne a {
+    color: #8f58b1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.2s ease;
+}
+
+.popup-contact-content .personne a:hover {
+    color: #a56bc7;
+    text-decoration: underline;
+}
+
+/* Responsive doux */
+@media (max-width: 560px) {
+    #popup-contact .personne {
+        width: 100%;
+    }
+}
 
 @media (max-width: 1300px) {
     .conteneur-presentation {
