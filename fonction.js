@@ -10,7 +10,7 @@ function togglePopup(nom) {
 }
 
 function defilement() {
-    const navLiens = document.querySelectorAll('nav a');
+    const navLiens = document.querySelectorAll('ul li a');
 
     navLiens.forEach(lien=> {
         lien.addEventListener('click', function(event) {
@@ -27,6 +27,7 @@ function defilement() {
         });
     });
 }
+
 
 document.addEventListener('DOMContentLoaded', defilement);
 
@@ -78,3 +79,9 @@ window.addEventListener("scroll", function () {
 });
 
 
+document.querySelector('.menu-responsive').addEventListener('click', function(){
+    document.querySelector('.menu-responsive').style.display = 'none';
+})
+document.querySelector('.menu-logo-responsive').addEventListener('click', function(){
+    document.querySelector('.menu-responsive').style.display = 'block';
+})

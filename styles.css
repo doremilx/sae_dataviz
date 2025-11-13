@@ -1,75 +1,76 @@
 @font-face {
-    font-family: ShineMonday;
-    src: url(fonts/ShineMonday.otf);
+  font-family: ShineMonday;
+  src: url(fonts/ShineMonday.otf);
 }
 
 @font-face {
-    font-family: BiscuitGlitch;
-    src: url(fonts/BiscuitGlitch.ttf);
+  font-family: BiscuitGlitch;
+  src: url(fonts/BiscuitGlitch.ttf);
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FBF6D1;
-    margin: 0;
-    overflow-x: hidden;
+  background-color: #fbf6d1;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header {
-    background-image: url(FondAccueil.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 140vh;
-    padding-bottom: clamp(200px, 50vw, 350px);
+  background-image: url(FondAccueil.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 140vh;
+  padding-bottom: clamp(200px, 50vw, 350px);
 }
 
 p {
-    font-family: ShineMonday, sans-serif;
+  font-family: ShineMonday, sans-serif;
 }
 
 h1 {
-    font-family: BiscuitGlitch, sans-serif;
+  font-family: BiscuitGlitch, sans-serif;
 }
 
 .logo {
-    display: block;
-    margin-inline: auto;
-    max-width: 70vw;
-    width: 100%;
-    min-width: 350px;
-}   
+  display: block;
+  margin-inline: auto;
+  max-width: 70vw;
+  width: 100%;
+  min-width: 350px;
+}
 
 .labubu {
-    position: absolute;
-    width: 450px;
-    max-width: 100%;
+  position: absolute;
+  width: 450px;
+  max-width: 100%;
 
-    right: 0;
-    top: 500px;
+  right: 0;
+  top: 500px;
 }
 
 .labubu .tete {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 .oeil {
-    position: absolute;
-    width: 40px;
-    height: 55px;
-    background: #fff;
-    border-radius: 50%;
-    overflow: hidden;
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .oeil-gauche {
   top: 160px;
   left: 163px;
-
 }
 
 .oeil-droit {
@@ -78,692 +79,781 @@ h1 {
 }
 
 @keyframes gradientAnim {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .pupille {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 20px;
-    height: 30px;
-    background: #000;
-    border-radius: 50%;
-    transition: 0.05s linear;
-    background: linear-gradient(45deg, red, rgb(118, 118, 255), rgb(126, 255, 126), rgb(255, 122, 122));
-    background-size: 400% 400%;
-    animation: gradientAnim 8s ease infinite;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.05s linear;
+  background: linear-gradient(
+    45deg,
+    red,
+    rgb(118, 118, 255),
+    rgb(126, 255, 126),
+    rgb(255, 122, 122)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnim 8s ease infinite;
 }
 
 /* Menu de navigation */
 #presentation {
-    min-height: 90vh;
-    height: fit-content;
-    align-content: center;
+  min-height: 90vh;
+  height: fit-content;
+  align-content: center;
 }
 
 .top-bar {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    background: #FBF6D1;
-    border: 2px solid #000;
-    border-radius: 30px;
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 100px;
-    padding: 10px 30px;
-    font-family: 'BiscuitGlitch', sans-serif;
+  display: flex;
+  align-items: center;
+  background: #fbf6d1;
+  border: 2px solid #000;
+  border-radius: 30px;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  font-family: "BiscuitGlitch", sans-serif;
 }
 
 .menu-left,
 .menu-right {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.8rem;
-    transition: 0.2s ease;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8rem;
+  transition: 0.2s ease;
 }
 
 .menu a:hover {
-    text-decoration-line: underline;
-    color: #8f58b1;
+  text-decoration-line: underline;
+  color: #8f58b1;
 }
 
 .menu-logo {
-    width: 140px;
-    margin: 0 60px;
-    position: relative;
+  width: 140px;
+  margin: 0 60px;
+  position: relative;
 }
 
 .menu-logo::before {
-    content: ""; /* rend visible le pseudo-élément */
-    position: absolute;
-    transform: translate(0, -65px); 
-    width: 140px;
-    height: 140px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    background-color: #FBF6D1;
-    background-image: url("LogoIcone.png");
-    background-position: center;
-    background-size: 90%;
-    background-repeat: no-repeat;
+  content: ""; /* rend visible le pseudo-élément */
+  position: absolute;
+  transform: translate(0, -65px);
+  width: 140px;
+  height: 140px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #fbf6d1;
+  background-image: url("LogoIcone.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.menu-responsive {
+  display: none;
+}
+.menu-logo-responsive {
+  display: none;
 }
 
 .remonte_page {
-    display: block;
-    position: fixed;
-    bottom: 20px;
-    right: 50px;
-    background-color: rgba(255, 0, 0, 0);
-    border-radius: 100px;
-    z-index: 100;
-    background-image: url(imgLabubu/labubu_pointe_top.png);
-    background-position: center;
-    background-size: contain;
-    height: 100px;
-    width: 100px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease, scale 0.1s ease-in-out;;
-    pointer-events: none; /* évite les clics quand invisible */
-    z-index: 1000;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 100px;
+  z-index: 100;
+  background-image: url(imgLabubu/labubu_pointe_top.png);
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, scale 0.1s ease-in-out;
+  pointer-events: none; /* évite les clics quand invisible */
+  z-index: 1000;
 }
 
 .remonte_page.visible {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-.remonte_page:hover{
-    scale: 1.05;
+.remonte_page:hover {
+  scale: 1.05;
 }
 
 /* Présentation */
-.texte-presentation{
-    min-height: 75vh;
-    font-size: 1.5rem;
-    margin-top: 50px;
+.texte-presentation {
+  min-height: 75vh;
+  font-size: 1.5rem;
+  margin-top: 50px;
 }
 
-.conteneur-presentation{
-    width: 80%;
-    margin-inline: auto;    
-    display: flex;
-    gap: 70px;
+.conteneur-presentation {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  gap: 70px;
 }
 
-.conteneur-presentation img{
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    height: min-content;
-    max-width: 100%;
+.conteneur-presentation img {
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  height: min-content;
+  max-width: 100%;
 }
 
 .accroche-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .accroche {
-    max-width: 800px;
-    text-align: center;
-    margin-inline: 40px;
-    margin-top: 50px;
-    background-color: #FBF6D1;
-    padding-top: 7px;
-    border-radius: 60px 60px 0 0;
-    position: relative;
-    padding-top: 20px;
-    font-size: clamp(1rem, 1.35rem, 1.5rem);
-    font-family: "ShineMonday";
-    padding-inline: 30px;
+  max-width: 800px;
+  text-align: center;
+  margin-inline: 40px;
+  margin-top: 50px;
+  background-color: #fbf6d1;
+  padding-top: 7px;
+  border-radius: 60px 60px 0 0;
+  position: relative;
+  padding-top: 20px;
+  font-size: clamp(1rem, 1.35rem, 1.5rem);
+  font-family: "ShineMonday";
+  padding-inline: 30px;
 }
 
 .accroche::after {
-    content: "";
-    position: absolute;
-    top: 99%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 90px;
-    background-image: url("TransitionsPages/TransitionAccroche3.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 90px;
+  background-image: url("TransitionsPages/TransitionAccroche3.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-
 
 /* Histoire des Labubus */
 
-
-
-.conteneur_histoire{
-display: flex;
-    width: 80%;
-    margin-inline: auto;
-    font-size: 1.5rem;
-gap: 40px;
+.conteneur_histoire {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+  font-size: 1.5rem;
+  gap: 40px;
 }
 
-.conteneur_histoire img{
-    width: 35vw;
-    min-width: 100%;
+.conteneur_histoire img {
+  width: 35vw;
+  min-width: 100%;
 
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-
-    
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-.img_histoire{
-    min-height: min-content;
-    margin-inline: auto;
-    width: min-content;
-    margin-block: 100px;
-    align-content:end;
+.img_histoire {
+  min-height: min-content;
+  margin-inline: auto;
+  width: min-content;
+  margin-block: 100px;
+  align-content: end;
 }
 
 /* Graphique Points */
-.FondueVertHaut{
-    background-image: url(TransitionsPages/TransitionVertHaut.svg);
-    height: 91px;
+.FondueVertHaut {
+  background-image: url(TransitionsPages/TransitionVertHaut.svg);
+  height: 91px;
 }
 
-.conteneur-points{
-    background-color: #CBD7A8;
+.conteneur-points {
+  background-color: #cbd7a8;
 }
 
-.graphiquePoints{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.graphiquePoints {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .conteneur-points h1 {
-    margin: 0;
-    padding-top: 15px;
-    padding-left: 40px;
-    font-size: 2.8rem;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 40px;
+  font-size: 2.8rem;
 }
 
 .graphique {
-    width: 95%;
-    height: 80%;
+  width: 95%;
+  height: 80%;
 }
 
-.FondueVertBas{
-    background-image: url(TransitionsPages/TransitionVertBas.svg);
-    height: 91px;
+.FondueVertBas {
+  background-image: url(TransitionsPages/TransitionVertBas.svg);
+  height: 91px;
 }
 
 /* Graphique Empilé */
-.conteneur-empile{
-    padding-top: 10px;
-    text-align: right;
-    position: relative;
-    padding-bottom: clamp(140px, 11vw, 240px);
-    min-height: 620px;
+.conteneur-empile {
+  padding-top: 10px;
+  text-align: right;
+  position: relative;
+  padding-bottom: clamp(140px, 11vw, 240px);
+  min-height: 620px;
 }
 
 .conteneur-empile h1 {
-    margin-right: 50px;
-    margin-bottom: 20px;
-    font-size: 2.8rem;
-    padding-bottom: 50px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  padding-bottom: 50px;
 }
 
 .LabubuDecoEmpile {
-    position: absolute;
-    right: 100px;
-    top: clamp(600px, 60vh, 650px);
-    z-index: -1;
-    transition: all 1s ease-in-out;
+  position: absolute;
+  right: 100px;
+  top: clamp(600px, 60vh, 650px);
+  z-index: -1;
+  transition: all 1s ease-in-out;
 }
 
 .graphiqueEmpile {
-    width: 90%;
-    height: 500px;
-    margin-inline: auto;
+  width: 90%;
+  height: 500px;
+  margin-inline: auto;
 }
 
 /* Graphique Carte */
 .graphiqueCarte {
-    height: 110vh;
-    background-color: #E99EA8;
+  height: 110vh;
+  background-color: #e99ea8;
 }
 .graphiqueCarte h1 {
-    margin: 0;
-    padding-top: 15px;
-    margin-left: 40px;
-    font-size: 2.8rem;
+  margin: 0;
+  padding-top: 15px;
+  margin-left: 40px;
+  font-size: 2.8rem;
 }
 
 #map {
-    height: 700px;
-    width: 70%;
-    border-radius: 30px;
+  height: 700px;
+  width: 70%;
+  border-radius: 30px;
 
-    margin-left: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    margin-top: 40px;
+  margin-left: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
 }
 
 .legendeCarte {
-    width: 90%;
-    margin-left: 20px;
-    margin-top: 60px;
-    background-color:#B4C6FF;
-    border-radius: 30px;
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 60px;
+  background-color: #b4c6ff;
+  border-radius: 30px;
 
-    padding: 15px;
-    font-family: ShineMonday;
-    font-size: 1.2rem;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  font-family: ShineMonday;
+  font-size: 1.2rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.carteFlex { 
-    display: flex;
-    width: 95%;
-    margin-inline: auto;
-    align-items: stretch;
+.carteFlex {
+  display: flex;
+  width: 95%;
+  margin-inline: auto;
+  align-items: stretch;
 }
 
 .columnLegendeCarte {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    justify-content: space-between;
-    gap: clamp(100px, 8vh, 150px)
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  justify-content: space-between;
+  gap: clamp(100px, 8vh, 150px);
 }
 
 .labubuDecoCarte {
-    height: auto;
-    position:static;
+  height: auto;
+  position: static;
 }
 
 .legendes {
-    display: flex;
+  display: flex;
 }
-.legendes img{
-    max-width: 60px;
-    max-height: 63px;
+.legendes img {
+  max-width: 60px;
+  max-height: 63px;
 }
 
 .legendeCarte p {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .leaflet-popup-content h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .FondueRoseHaut {
-    background-image: url(TransitionsPages/TransitionRoseHaut.svg);
-    height: 91px;
+  background-image: url(TransitionsPages/TransitionRoseHaut.svg);
+  height: 91px;
 }
 .FondueRoseBas {
-    background-image: url(TransitionsPages/TransitionRoseBas.svg);
-    height: 91px;
+  background-image: url(TransitionsPages/TransitionRoseBas.svg);
+  height: 91px;
 }
 
 /* Footer */
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    border: #FBF6D1 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  border: #fbf6d1 solid;
 }
 
 footer h1 {
-    display: flex;
-    align-items: center;
-    font-family: 'BiscuitGlitch', Courier, monospace;
-    font-size: 3.5rem;
-    margin: 0;
-    color: #000;
+  display: flex;
+  align-items: center;
+  font-family: "BiscuitGlitch", Courier, monospace;
+  font-size: 3.5rem;
+  margin: 0;
+  color: #000;
 }
 
 footer h1 img {
-    width: 120px;
-    height: auto;
-    transform: translateY(-10px);
+  width: 120px;
+  height: auto;
+  transform: translateY(-10px);
 }
 
 footer button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-family: 'BiscuitGlitch', Courier, monospace;
-    font-size: 2rem;
-    text-decoration: none;
-    color: #000;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s ease;
-  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "BiscuitGlitch", Courier, monospace;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
 footer button:hover {
-    text-decoration-line: underline;
-    color: #8f58b1;
+  text-decoration-line: underline;
+  color: #8f58b1;
 }
 
 footer ul {
-    list-style-type: none;
-    font-family: 'BiscuitGlitch', Courier, monospace; 
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
-    width: max-content;
-    margin-left: auto;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-      z-index: 10;
+  list-style-type: none;
+  font-family: "BiscuitGlitch", Courier, monospace;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  margin-left: auto;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 10;
 }
 
 footer ul li {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 footer ul li button {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 footer ul li button:hover {
-    text-decoration-line: underline;
-    color: #8f58b1;
+  text-decoration-line: underline;
+  color: #8f58b1;
 }
 
-.labubu_deco_allonge{
-    position: absolute;
-    bottom: 0.5;
-    z-index: 10000;
-    left: 60%;
-    transform: translateX(-50%);
+.labubu_deco_allonge {
+  position: absolute;
+  bottom: 0.5;
+  z-index: 10000;
+  left: 60%;
+  transform: translateX(-50%);
 }
 
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(3px);
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
 }
 
 .popup-overlay.open {
-    display: flex;
+  display: flex;
 }
 
 .popup-content {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 0 6px #FBF6D1, 0 0 0 12px #CBD7A8, 0 0 0 18px #E99EA8;
-    padding: 10px 30px;
-    width: 80%;
-    height: 60vh;
-    overflow-y: auto;
-    position: relative;
-    font-family: 'BiscuitGlitch', Courier, monospace;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 6px #fbf6d1, 0 0 0 12px #cbd7a8, 0 0 0 18px #e99ea8;
+  padding: 10px 30px;
+  width: 80%;
+  height: 60vh;
+  overflow-y: auto;
+  position: relative;
+  font-family: "BiscuitGlitch", Courier, monospace;
 }
 
 .popup-content::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 .popup-content::-webkit-scrollbar-thumb {
-    background-color: #8f58b1;
-    border-radius: 10px;
+  background-color: #8f58b1;
+  border-radius: 10px;
 }
 
 .popup-content::-webkit-scrollbar-track {
-    background-color: #f0f0f0;
-    border-radius: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
 }
 
 .popup-content h2 {
-    font-size: 2.4rem;
+  font-size: 2.4rem;
 }
 
 .popup-content h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .link {
-    color: #8f58b1;
+  color: #8f58b1;
 }
 
 .popup-content p {
-    font-size: 1.1rem;
-    line-height: 1.4;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }
 
 .popup-content .fermer {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 1.3rem;
-    font-family: 'BiscuitGlitch', Courier, monospace;
-    cursor: pointer;
-    transition: 0,2s ease;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-family: "BiscuitGlitch", Courier, monospace;
+  cursor: pointer;
+  transition: 0, 2s ease;
 }
 
 .popup-content .fermer:hover {
-    color: #8f58b1;
+  color: #8f58b1;
 }
 
-
 .popup-contact-content {
-    width: 50%;
-    height: 40vh;
+  width: 50%;
+  height: 40vh;
 }
 
 .popup-contact-content .container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin: auto;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .popup-contact-content .personne {
-    border: 2px solid #8f58b1;
-    border-radius: 14px;
-    padding: 18px 22px;
-    width: 300px;
-    transition: 0.2s ease;
+  border: 2px solid #8f58b1;
+  border-radius: 14px;
+  padding: 18px 22px;
+  width: 300px;
+  transition: 0.2s ease;
 }
 
 .popup-contact-content .personne:hover {
-    transform: translateY(-3px);
-    border-color: #a56bc7;
+  transform: translateY(-3px);
+  border-color: #a56bc7;
 }
 
 .popup-contact-content .personne h3 {
-    margin-top: 5px;
-    font-size: 1.4rem;
+  margin-top: 5px;
+  font-size: 1.4rem;
 }
 
 .popup-contact-content .personne p {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
 }
 
 .popup-contact-content .personne a {
-    color: #8f58b1;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: 0.2s ease;
+  color: #8f58b1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.2s ease;
 }
 
 .popup-contact-content .personne a:hover {
-    color: #a56bc7;
-    text-decoration: underline;
+  color: #a56bc7;
+  text-decoration: underline;
 }
 
 /* Responsive doux */
 @media (max-width: 560px) {
-    #popup-contact .personne {
-        width: 100%;
-    }
+  #popup-contact .personne {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1300px) {
-    .conteneur-presentation {
-        flex-direction: column;
-    }
-    .conteneur-presentation img {
-        width: 400px;
-        margin-inline: auto;
-    }
-
-    .labubu {
-        width: 300px;
-    }
-
-    .oeil {
-        height: 35px;
-        width: 25px;
-    }
-
-    .oeil-gauche {
-        top: 105px;
-        left: 110px;
-    }
-
-    .oeil-droit{
-        top: 105px;
-        right: 117px;
-    }
-
-    .pupille {
-        width: 15px;
-        height: 25px;
-    }
-        
-    .conteneur_histoire {
-        flex-direction:column-reverse;
-    }
-
-    .img_histoire {
-        width: 100%;
-        margin-bottom: 0;
-        margin-top: 300px;
-    }
+  .conteneur-presentation {
+    flex-direction: column;
+  }
+  .conteneur-presentation img {
+    width: 400px;
+    margin-inline: auto;
   }
 
-    
+  .labubu {
+    width: 300px;
+  }
+
+  .oeil {
+    height: 35px;
+    width: 25px;
+  }
+
+  .oeil-gauche {
+    top: 105px;
+    left: 110px;
+  }
+
+  .oeil-droit {
+    top: 105px;
+    right: 117px;
+  }
+
+  .pupille {
+    width: 15px;
+    height: 25px;
+  }
+
+  .conteneur_histoire {
+    flex-direction: column-reverse;
+  }
+
+  .img_histoire {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 300px;
+  }
+}
+
 @media (max-width: 1200px) {
-    .graphiqueCarte {
-        padding-bottom:1000px;
-    }
+  .graphiqueCarte {
+    padding-bottom: 1000px;
+  }
 
-    .carteFlex {
-        flex-direction: column;
-        align-items: center;
-    }
+  .carteFlex {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #map {
-        width: 90%;
-        height: 500px;
-    }
+  #map {
+    width: 90%;
+    height: 500px;
+  }
 
-    .legendeCarte {
-        width: 70%;
-        margin:0;
-        padding-inline: 40px;
-        align-self: center;
-    }
+  .legendeCarte {
+    width: 70%;
+    margin: 0;
+    padding-inline: 40px;
+    align-self: center;
+  }
 
-    .columnLegendeCarte {
-        padding-top: 50px;
-        flex-direction:row-reverse;
-        width: 80%;
-        gap: 0;
-    }
+  .columnLegendeCarte {
+    padding-top: 50px;
+    flex-direction: row-reverse;
+    width: 80%;
+    gap: 0;
+  }
 
-    .labubuDecoCarte {
-        width: 300px;
-        height: 300px;
-    }
+  .labubuDecoCarte {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 1100px) {
-    header {
-        background-image: url(Phone-FondAccueil.svg);
-        min-height: 101.5vh;
-    }
+  header {
+    background-image: url(Phone-FondAccueil.svg);
+    min-height: 101.5vh;
+  }
 }
 
-@media (max-width: 1000px) {
-    .graphiqueEmpile{
-        width: 90%;
-    }
+@media (max-width: 1024px) {
+  .top-bar {
+    display: none;
+  }
 
-    .LabubuDecoEmpile{
-        width: 100px;
-        height: 140px;
-        top: 150px;
-        left: 60px;
-        transform: scaleX(-1);
-    }
+  .menu {
+    display: none;
+  }
+
+  .logo {
+    padding-top: 140px;
+  }
+  .menu-logo-responsive {
+    display: block;
+    justify-content: center;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+
+  .menu-responsive {
+    display: none;
+    background-color: #fbf6d1;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    opacity: 95%;
+    z-index: 1000000;
+  }
+
+  .menu-responsive ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    padding-top: 50%;
+  }
+
+  .menu-responsive ul a {
+    text-decoration: none;
+    font-family: BiscuitGlitch, sans-serif;
+    font-size: 3em;
+  }
+
+  .graphiqueEmpile {
+    width: 90%;
+  }
+
+  .LabubuDecoEmpile {
+    width: 100px;
+    height: 140px;
+    top: 150px;
+    left: 60px;
+    transform: scaleX(-1);
+  }
 }
 
 @media (max-width: 900px) {
-    .labubu_deco_allonge{
-        z-index: 1;
-        opacity: 50%;
-    }
+  .labubu_deco_allonge {
+    z-index: 1;
+    opacity: 50%;
+  }
 }
 
 @media (max-width: 800px) {
-    footer h1{
-        font-size: 2rem;
-    }
+  footer h1 {
+    font-size: 2rem;
+  }
 
-    footer ul li button{
-        font-size: 1.7rem;
-    }
+  footer ul li button {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 600px) {
-    .LabubuDecoEmpile{
-        top: 280px;
-        left: 40px;
+    h1{
+        font-size: 2rem;
     }
+    p{
+        font-size: 1.2rem;
+    }
+
+    .conteneur-points h1{
+        font-size: 2rem;
+    }
+
+    .conteneur-empile h1{
+        font-size: 2rem;
+    }
+  .LabubuDecoEmpile {
+    top: 280px;
+    left: 40px;
+    opacity: 40%;
+    height: 18%;
+  }
+
+  .graphiqueCarte h1{
+    font-size: 2rem;
+  }
+
+  footer h1{
+    font-size: 1.8rem;
+  }
+
+  footer h1 img{
+    width: 30%;
+  }
+  footer ul li button{
+    font-size: 1.3rem;
+
+  }
 }

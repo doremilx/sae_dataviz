@@ -24,7 +24,6 @@
 
   <body>
     <header>
-
       <div class="top-bar">
         <nav class="menu">
           <ul class="menu-left">
@@ -41,19 +40,38 @@
         </nav>
       </div>
 
-      <img src="LogoTitre.png" alt="" width="1000" class="logo"/>
+      <div class="menu-logo-responsive">
+        <img src="LogoIcone.png" alt="" width="125px" />
+      </div>
+      <div class="menu-responsive">
+        <ul>
+          <li><a href="#" data-target="presentation">Présentation</a></li>
+          <li><a href="#" data-target="evolution">Évolution</a></li>
+          <li><a href="#" data-target="comparaison">Comparaison</a></li>
+          <li><a href="#" data-target="vue-mondiale">Vue mondiale</a></li>
+        </ul>
+      </div>
+
+      <img src="LogoTitre.png" alt="" width="1000" class="logo" />
       <div class="accroche-container">
-        <h1 class="accroche">Parce que même les jouets ont leurs courbes de tendance… <br> Découvre la popularité de Labubu à travers les données !</h1>
-      
-  <div class="labubu">
-          <img src="imgLabubu/labubu_yeux_bougent2.png" alt="Labubu" class="tete">
+        <h1 class="accroche">
+          Parce que même les jouets ont leurs courbes de tendance… <br />
+          Découvre la popularité de Labubu à travers les données !
+        </h1>
+
+        <div class="labubu">
+          <img
+            src="imgLabubu/labubu_yeux_bougent2.png"
+            alt="Labubu"
+            class="tete"
+          />
 
           <div class="oeil oeil-gauche">
-              <div class="pupille"></div>
+            <div class="pupille"></div>
           </div>
 
           <div class="oeil oeil-droit">
-              <div class="pupille"></div>
+            <div class="pupille"></div>
           </div>
         </div>
       </div>
@@ -62,41 +80,59 @@
     <button class="remonte_page"></button>
     <div class="texte-presentation" id="presentation">
       <div class="conteneur-presentation">
-        <img src="labubu-presentation.jpg" alt="" width="500px"/>
+        <img src="labubu-presentation.jpg" alt="" width="500px" />
         <div>
           <h1>DATABUBU</h1>
           <p>
-            Databubu retrace l’évolution des recherches autour du mot “Labubu” en France 
-            et dans le monde à travers des graphiques interactifs et une carte dynamique.
-            En s’appuyant sur les données de recherche, le site met en lumière la manière 
-            dont un simple jouet de collection a su captiver l’attention du public et 
-            devenir un phénomène culturel mondial.
-            <br/>
-            <br/>
-            Databubu offre ainsi une lecture visuelle et ludique de cette popularité, révélant 
-            comment une tendance peut naître, se propager et marquer durablement la culture populaire.
+            Databubu retrace l’évolution des recherches autour du mot “Labubu”
+            en France et dans le monde à travers des graphiques interactifs et
+            une carte dynamique. En s’appuyant sur les données de recherche, le
+            site met en lumière la manière dont un simple jouet de collection a
+            su captiver l’attention du public et devenir un phénomène culturel
+            mondial.
+            <br />
+            <br />
+            Databubu offre ainsi une lecture visuelle et ludique de cette
+            popularité, révélant comment une tendance peut naître, se propager
+            et marquer durablement la culture populaire.
           </p>
         </div>
       </div>
     </div>
 
-  <div class="conteneur_histoire">
-    <div class="texte_histoire">
-    <h1>Le Labubu : la figurine qui a retourné Internet</h1>
-    <p>Le Labubu est une figurine imaginée par l’artiste hongkongais Kasing Lung. Son style unique à la fois mignon, étrange et un peu sauvage en fait un objet immédiatement reconnaissable. Chaque édition est produite en quantité très limitée, et c’est justement cette rareté qui crée l’engouement : les figurines se vendent en quelques minutes, parfois même avant leur sortie officielle.
-<br>
-<br>
-Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs trouvailles. Résultat : une hype mondiale. Le Labubu est devenu plus qu’une figurine, c’est un symbole de créativité et de culture pop, recherché par les fans comme par les investisseurs.</p>
-</div>
-<div class="img_histoire">
-<img src="imgLabubu/histoire_labubu.jpg" width="1000px" loading="lazy"></div>
-  </div>
-
-
+    <div class="conteneur_histoire">
+      <div class="texte_histoire">
+        <h1>Le Labubu : la figurine qui a retourné Internet</h1>
+        <p>
+          Le Labubu est une figurine imaginée par l’artiste hongkongais Kasing
+          Lung. Son style unique à la fois mignon, étrange et un peu sauvage en
+          fait un objet immédiatement reconnaissable. Chaque édition est
+          produite en quantité très limitée, et c’est justement cette rareté qui
+          crée l’engouement : les figurines se vendent en quelques minutes,
+          parfois même avant leur sortie officielle.
+          <br />
+          <br />
+          Avec TikTok et Instagram, les collectionneurs ont commencé à partager
+          leurs trouvailles. Résultat : une hype mondiale. Le Labubu est devenu
+          plus qu’une figurine, c’est un symbole de créativité et de culture
+          pop, recherché par les fans comme par les investisseurs.
+        </p>
+      </div>
+      <div class="img_histoire">
+        <img
+          src="imgLabubu/histoire_labubu.jpg"
+          width="1000px"
+          loading="lazy"
+        />
+      </div>
+    </div>
 
     <div class="FondueVertHaut"></div>
     <div class="conteneur-points" id="evolution">
-      <h1>Évolution de la recherche “Labubu” selon le temps et les pays les plus populaires</h1>
+      <h1>
+        Évolution de la recherche “Labubu” selon le temps et les pays les plus
+        populaires
+      </h1>
       <div class="graphiquePoints">
         <div class="graphique">
           <canvas id="lineChart"></canvas>
@@ -106,11 +142,17 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
     <div class="FondueVertBas"></div>
 
     <div class="conteneur-empile" id="comparaison">
-      <h1>Comparaison de la recherche du mot "Labubu" et ses concurrents en France</h1>
-      
+      <h1>
+        Comparaison de la recherche du mot "Labubu" et ses concurrents en France
+      </h1>
+
       <div class="graphiqueEmpile">
         <canvas id="barChart"></canvas>
-        <img src="imgLabubu/Labubu_deco_barre.png" alt="" class="LabubuDecoEmpile">
+        <img
+          src="imgLabubu/Labubu_deco_barre.png"
+          alt=""
+          class="LabubuDecoEmpile"
+        />
       </div>
     </div>
 
@@ -119,110 +161,154 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
       <h1>Répartition mondiale de la popularité du mot "Labubu"</h1>
       <div class="carteFlex">
         <div class="columnLegendeCarte">
-        <div class="legendeCarte">
-          <div class="legendes">
-            <img
-              src="MarkersLabubu/labubu_marker_vert2.png"
-              alt="" loading="lazy"
-            />
-            <p>: Forte popularité</p>
+          <div class="legendeCarte">
+            <div class="legendes">
+              <img
+                src="MarkersLabubu/labubu_marker_vert2.png"
+                alt=""
+                loading="lazy"
+              />
+              <p>: Forte popularité</p>
+            </div>
+            <div class="legendes">
+              <img
+                src="MarkersLabubu/labubu_marker_bleu2.png"
+                alt=""
+                loading="lazy"
+              />
+              <p>: Moyenne popularité</p>
+            </div>
+            <div class="legendes">
+              <img
+                src="MarkersLabubu/labubu_marker_rouge2.png"
+                alt=""
+                loading="lazy"
+              />
+              <p>: Faible popularité</p>
+            </div>
           </div>
-          <div class="legendes">
-            <img
-              src="MarkersLabubu/labubu_marker_bleu2.png"
-              alt="" loading="lazy"
-            />
-            <p>: Moyenne popularité</p>
-          </div>
-          <div class="legendes">
-            <img
-              src="MarkersLabubu/labubu_marker_rouge2.png"
-              alt="" loading="lazy"
-            />
-            <p>: Faible popularité</p>
-          </div>
+
+          <img
+            src="imgLabubu/Labubu_deco_carte.png"
+            class="labubuDecoCarte"
+            alt=""
+            loading="lazy"
+          />
         </div>
-         <img src="imgLabubu/Labubu_deco_carte.png" class="labubuDecoCarte" alt="" loading="lazy">
-        </div>
-       
+
         <div id="map"></div>
       </div>
     </div>
     <div class="FondueRoseBas"></div>
 
     <footer>
-      <h1><img src="LogoIcone.png" alt="">Databubu</h1>
+      <h1><img src="LogoIcone.png" alt="" />Databubu</h1>
       <ul>
-        <li><button type="button" onclick="togglePopup('mentions')">Mentions Légales</button></li>
-        <li><button type="button" onclick="togglePopup('contact')">Nous contacter</button></li>
+        <li>
+          <button type="button" onclick="togglePopup('mentions')">
+            Mentions Légales
+          </button>
+        </li>
+        <li>
+          <button type="button" onclick="togglePopup('contact')">
+            Nous contacter
+          </button>
+        </li>
       </ul>
-      <img src="imgLabubu/labubu_allonge.png" class="labubu_deco_allonge" width="200" alt="">
+      <img
+        src="imgLabubu/labubu_allonge.png"
+        class="labubu_deco_allonge"
+        width="200"
+        alt=""
+      />
     </footer>
-    
+
     <div id="popup-mentions" class="popup-overlay">
       <div class="popup-content">
         <h2>Mentions Légales</h2>
         <h3>Éditeur du site web :</h3>
         <p>
-          Université Gustave Eiffel <br>
-          5 Boulevard Descartes <br>
-          77420 Champs-sur-Marne <br>
-          Mail: webmaster@univ-eiffel.fr <br>
-          Téléphone : +33 01 60 95 75 00 <br>
-          Numéro SIREN : 130026123 <br>
+          Université Gustave Eiffel <br />
+          5 Boulevard Descartes <br />
+          77420 Champs-sur-Marne <br />
+          Mail: webmaster@univ-eiffel.fr <br />
+          Téléphone : +33 01 60 95 75 00 <br />
+          Numéro SIREN : 130026123 <br />
           Code APE : 85.42Z
         </p>
 
         <h3>Réalisation :</h3>
         <p>
-          UX et UI designer : Roy NAJARIAN <br>
-          Développeur web front-end : Rémi LIN <br>
-          Rédaction : Rémi LIN et Roy NAJARIAN <br><br>
-          À l’exception des images, l’ensemble des éléments graphiques du site a été conçu par Roy Najarian et Rémi LIN. <br>
-          Le nom « Databubu » a été vérifié sur la base de données publique de l’INPI. Aucun usage enregistré n’a été trouvé à ce jour.
+          UX et UI designer : Roy NAJARIAN <br />
+          Développeur web front-end : Rémi LIN <br />
+          Rédaction : Rémi LIN et Roy NAJARIAN <br /><br />
+          À l’exception des images, l’ensemble des éléments graphiques du site a
+          été conçu par Roy Najarian et Rémi LIN. <br />
+          Le nom « Databubu » a été vérifié sur la base de données publique de
+          l’INPI. Aucun usage enregistré n’a été trouvé à ce jour.
         </p>
 
         <h3>Hébergeurs :</h3>
         <p>
-          Notre site est hébergé sur GitHub dans le cadre de notre projet étudiant. <br>
-          GITHUB <br>
-          PRIUS BERNHARDPLEIN 200 PAYS BAS PAYS-BAS <br>
-          <a href="https://www.github.com" target="_blank" class="link">www.github.com</a>
+          Notre site est hébergé sur GitHub dans le cadre de notre projet
+          étudiant. <br />
+          GITHUB <br />
+          PRIUS BERNHARDPLEIN 200 PAYS BAS PAYS-BAS <br />
+          <a href="https://www.github.com" target="_blank" class="link"
+            >www.github.com</a
+          >
         </p>
 
         <h3>Données collectées par Github Pages :</h3>
         <p>
-          Le site étant hébergé par GitHub pages. Certaines données techniques telles que votre adresse IP, le type de navigateur utilisé et 
-          des informations relatives à votre appareil peuvent être collectées par GitHub. Pour plus d'informations, vous pouvez consulter 
-          la <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" class="link">Politique de confidentialité</a> de GitHub.
+          Le site étant hébergé par GitHub pages. Certaines données techniques
+          telles que votre adresse IP, le type de navigateur utilisé et des
+          informations relatives à votre appareil peuvent être collectées par
+          GitHub. Pour plus d'informations, vous pouvez consulter la
+          <a
+            href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement"
+            target="_blank"
+            class="link"
+            >Politique de confidentialité</a
+          >
+          de GitHub.
         </p>
 
         <h3>Politique de Confidentialité :</h3>
         <p>
-          Le site Databubu respecte la confidentialité des informations de ses visiteurs. Nous vous garantissons qu’aucune donnée personnelle n’est collectée ou même stockée. 
-          Le développement de ce site repose uniquement sur des données collectées auprès de Google Trends.
+          Le site Databubu respecte la confidentialité des informations de ses
+          visiteurs. Nous vous garantissons qu’aucune donnée personnelle n’est
+          collectée ou même stockée. Le développement de ce site repose
+          uniquement sur des données collectées auprès de Google Trends.
         </p>
 
         <h3>Crédits :</h3>
         <p>
-          Toute les données utilisées proviennent de Google Trends. Elle sont utilisée à des fin informationnels dans le cadre d’un projet étudiant établie par l’IUT de 
-          l'Université Gustave Eiffel à Champs-sur-Marne.
+          Toute les données utilisées proviennent de Google Trends. Elle sont
+          utilisée à des fin informationnels dans le cadre d’un projet étudiant
+          établie par l’IUT de l'Université Gustave Eiffel à Champs-sur-Marne.
         </p>
 
         <h3>Sources :</h3>
         <p>
-          Tous les visuels présentés sur ce site sont utilisés dans le cadre d’un projet étudiant à but non commercial. La marques et éléments visuels présent demeurent la propriété 
-          exclusive de leurs titulaires respectifs. A l’exception du logo, des images utilisées pour le fond ou encore des images présent sur la carte, la totalité des images 
+          Tous les visuels présentés sur ce site sont utilisés dans le cadre
+          d’un projet étudiant à but non commercial. La marques et éléments
+          visuels présent demeurent la propriété exclusive de leurs titulaires
+          respectifs. A l’exception du logo, des images utilisées pour le fond
+          ou encore des images présent sur la carte, la totalité des images
           proviennent du site officiel de POP MART
         </p>
 
-
         <h3>Polices d’écriture :</h3>
         <p>
-          Les polices “Biscuit Glitch” et “Shine Monday” sont utilisées dans le cadre d’un projet étudiant non commercial hébergé sur GitHub. Leur usage est conforme aux conditions 
-          de licence établies par leurs créateurs respectifs.
+          Les polices “Biscuit Glitch” et “Shine Monday” sont utilisées dans le
+          cadre d’un projet étudiant non commercial hébergé sur GitHub. Leur
+          usage est conforme aux conditions de licence établies par leurs
+          créateurs respectifs.
         </p>
-        <button type="button" class="fermer" onclick="togglePopup('mentions')">Fermer</button>
+        <button type="button" class="fermer" onclick="togglePopup('mentions')">
+          Fermer
+        </button>
       </div>
     </div>
 
@@ -233,9 +319,15 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
           <div class="personne">
             <h3>Roy NAJARIAN</h3>
             <p>
-              <a href="https://github.com/RoyNajarian" target="_blank">Github</a>
-              <a href="https://www.linkedin.com/in/roynajarian/" target="_blank">Linkedin</a>
-              <a href="mailto:roy.najarian@edu.univ-eiffel.fr" target="_blank">roy.najarian@edu.univ-eiffel.fr</a>
+              <a href="https://github.com/RoyNajarian" target="_blank"
+                >Github</a
+              >
+              <a href="https://www.linkedin.com/in/roynajarian/" target="_blank"
+                >Linkedin</a
+              >
+              <a href="mailto:roy.najarian@edu.univ-eiffel.fr" target="_blank"
+                >roy.najarian@edu.univ-eiffel.fr</a
+              >
             </p>
           </div>
 
@@ -243,15 +335,22 @@ Avec TikTok et Instagram, les collectionneurs ont commencé à partager leurs tr
             <h3>Rémi LIN</h3>
             <p>
               <a href="https://github.com/doremilx" target="_blank">Github</a>
-              <a href="https://www.linkedin.com/in/r%C3%A9mi-l-8856a9330/" target="_blank">Linkedin</a>
-              <a href="mailto:remi.lin2@edu.univ-eiffel.fr" target="_blank">remi.lin2@edu.univ-eiffel.fr</a>
+              <a
+                href="https://www.linkedin.com/in/r%C3%A9mi-l-8856a9330/"
+                target="_blank"
+                >Linkedin</a
+              >
+              <a href="mailto:remi.lin2@edu.univ-eiffel.fr" target="_blank"
+                >remi.lin2@edu.univ-eiffel.fr</a
+              >
             </p>
           </div>
         </div>
-        <button type="button" class="fermer" onclick="togglePopup('contact')">Fermer</button>
+        <button type="button" class="fermer" onclick="togglePopup('contact')">
+          Fermer
+        </button>
       </div>
     </div>
-    
   </body>
   <script src="graphique.js"></script>
   <script src="carte.js"></script>
