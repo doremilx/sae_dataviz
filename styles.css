@@ -346,8 +346,9 @@ h1 {
 
 .LabubuDecoEmpile {
   position: absolute;
-  right: 100px;
-  top: clamp(600px, 60vh, 650px);
+  width: 550px;
+  right: 0px;
+  top: clamp(550px, 60vh, 650px);
   z-index: -1;
   transition: all 1s ease-in-out;
 }
@@ -517,9 +518,10 @@ footer ul li button:hover {
 .labubu_deco_allonge {
   position: absolute;
   bottom: 0.5;
-  z-index: 10000;
-  left: 60%;
+  z-index: 1000;
+  left: 75%;
   transform: translateX(-50%);
+  opacity: 40%;
 }
 
 .popup-overlay {
@@ -571,7 +573,11 @@ footer ul li button:hover {
 }
 
 .popup-content h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+}
+
+.popup-content strong {
+  font-size: 1.3rem;
 }
 
 .link {
@@ -799,13 +805,6 @@ footer ul li button:hover {
     top: 150px;
     left: 60px;
     transform: scaleX(-1);
-  }
-}
-
-@media (max-width: 900px) {
-  .labubu_deco_allonge {
-    z-index: 1;
-    opacity: 50%;
   }
 }
 
