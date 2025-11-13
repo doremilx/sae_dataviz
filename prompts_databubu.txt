@@ -1,0 +1,97 @@
+Prompts Databubu:
+
+------------------------------------------------------------
+
+Logo Textuelle :
+J'aimerais que tu t'inspires de ces 2 images pour créer de la même manière, avec le même style et les mêmes couleurs, un grand titre pour la première page du site au nom de la marque qui est "Databubu". 
+L'idée serait que tu fasses exactement la même chose mais que tu changes simplement "exciting macaron" par "databubu". Fais un png transparent comme sur la deuxième image, le fond ne m'intéresse pas du tout.
+
+------------------------------------------------------------
+
+Labubu Pique-nique :
+A whimsical 3D fantasy scene showing a group of authentic Labubu-style creatures gathered for a cozy picnic in a colorful countryside setting. The background is bright and dreamy — a charming cottage with white walls, wooden beams, and an orange tiled roof surrounded by soft green hills, fluffy trees, blooming flowers, and a few butterflies flying under warm golden sunlight.
+
+Each character should look exactly like Labubu figures by Pop Mart:
+– slightly elongated heads with a small muzzle,
+– large, expressive, slightly asymmetrical eyes (some with rainbow reflections),
+– a mischievous smile with visible sharp teeth,
+– a small black nose and light blush on their cheeks,
+– a unique “cute but weird” designer toy aesthetic.
+
+They wear fluffy bunny suits in pastel tones — pink, sky blue, cream beige, gray, and chocolate brown — with ultra-detailed plush fur texture. One Labubu sits in the center playing a tiny guitar, while the others sit or lean on the grass, laughing or listening. A tiny blue radio plays music nearby, and a mini wooden table is filled with colorful pastries, cakes, and teacups.
+The lighting should be soft, warm, and cinematic, creating a gentle fairytale glow. The overall mood is magical, cozy, and playful, like a stop-motion fantasy world captured in high-end designer toy photography.
+Style keywords: authentic Labubu design, Pop Mart aesthetic, mischievous expression, cute yet creepy charm, 3D stylized rendering, realistic plush textures, toy photography style, cinematic lighting, shallow depth of field, soft bokeh background, Pixar-like environment, fantasy woodland vibe, ultra detailed, 8k render, handcrafted look, golden hour light.
+
+------------------------------------------------------------
+
+Labubu Plage :
+A bright and whimsical 3D scene featuring a group of authentic Labubu-style creatures enjoying a fun day at the beach. The overall environment should look exactly like the first reference image: a sunny seaside setting with soft beige sand, turquoise water, a clear sky with gentle clouds, and bright summer colors. Include beach details such as sandcastles, umbrellas, beach towels, small toys, seashells, a rubber duck, and a vintage mini radio.
+
+Each character must faithfully match the real Labubu aesthetic shown in the reference images:
+– elongated head shape with a small rounded muzzle,
+– expressive, slightly asymmetrical eyes (some with rainbow reflections or star-shaped highlights),
+– visible sharp teeth forming a mischievous smile,
+– tiny black nose and subtle cheek blush,
+– quirky “cute but creepy” designer toy look, exactly like Pop Mart Labubu figures.
+
+They wear fluffy bunny costumes in soft pastel colors — pink, mint, baby blue, cream, lavender, gray, and chocolate brown — with highly detailed plush textures. Their fur should look handcrafted and realistic, just like in the reference photos.
+The Labubu characters are interacting in playful beach activities:
+– one is building a sandcastle with a tiny shovel,
+– one is holding a popsicle,
+– one is waving a small flag from the top of a sand tower,
+– one is sitting on a beach chair playing a tiny guitar,
+– others are sitting happily in the sand, smiling and relaxing.
+
+The lighting should be warm, soft, and summery, with gentle highlights and a dreamy, slightly cinematic glow. The mood is cheerful, magical, and playful, like a high-end collectible toy photoshoot at the beach.
+Style keywords: authentic Labubu design, Pop Mart aesthetic, mischievous expressions, sharp teeth smile, cute + creepy charm, 3D stylized rendering, ultra detailed plush fur, toy photography style, cinematic soft lighting, shallow depth of field, pastel summer palette, high-end designer toy render, beach fantasy world, 8k quality.
+
+------------------------------------------------------------
+
+Labubu Rose :
+A single authentic Labubu character on a fully transparent PNG background, with no environment, no shadows, and no additional objects.
+
+The character must look exactly like a real Labubu from Pop Mart, with:
+an oval, slightly elongated face,
+a small rounded nose and a tiny muzzle,
+big oval eyes, glossy and expressive (not realistic eyes),
+a mischievous smile with sharp, small white teeth visible along the mouth,
+a cute but slightly creepy expression,
+a big head and small body proportions typical of a designer toy,
+smooth skin texture on the face (NO realistic pores or wrinkles),
+the overall look of a handcrafted collectible figurine, NOT a real creature.
+
+Costume (Must match real Labubu plush style)
+The Labubu is wearing a pastel purple and pink bunny suit with:
+a soft plush texture,
+NOT realistic fur (no long hairs, no animal fur texture),
+short fuzzy fibers like a stuffed toy,
+smooth, fluffy, velvety surface,
+vivid pastel gradient: bright lavender → purple → pink,
+shimmering pink-purple inner ears.
+
+Pose & Accessory (Very important)
+The pose must match the reference:
+
+the Labubu is walking forward, one foot lifted,
+body tilted slightly as if in motion,
+one arm relaxed,
+the other arm holding a white daisy flower with a yellow center and green stem,
+expression cheerful, playful, full of personality.
+
+Rendering Style
+
+soft studio lighting,
+toy photography look,
+smooth shadows,
+clean edges,
+must be perfectly isolated for transparent PNG output.
+
+Keywords
+authentic Labubu Pop Mart, stylized plush suit, pastel purple pink gradient, walking pose, daisy flower, big glossy eyes, cute creepy smile, sharp teeth, designer toy, 3D stylized, soft plush fur (not realistic), clean transparent PNG.
+
+------------------------------------------------------------
+
+Labubu Panneau et Labubu Champignon :
+-Génère moi un png d'un labubu qui pointe le edoigt vers le ciel.
+-Propose moi d'autres versions.
+-Finalement je veux un labubu qui pointe vers le haut et je veux qu'il y'ait sur son ventre un pancarte où y'a une fleche vers le haut pour que les utilisateurs comprennent qu'on appuyant sur ce bouton ca remonte evers le haut de la page

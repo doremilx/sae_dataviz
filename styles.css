@@ -314,7 +314,7 @@ h1 {
 .conteneur-points h1 {
   margin: 0;
   padding-top: 15px;
-  padding-left: 40px;
+  padding-inline: 40px;
   font-size: 2.8rem;
 }
 
@@ -338,7 +338,7 @@ h1 {
 }
 
 .conteneur-empile h1 {
-  margin-right: 50px;
+  margin-inline: 50px;
   margin-bottom: 20px;
   font-size: 2.8rem;
   padding-bottom: 50px;
@@ -346,9 +346,9 @@ h1 {
 
 .LabubuDecoEmpile {
   position: absolute;
-  width: 550px;
+  width: 450px;
   right: 0px;
-  top: clamp(550px, 60vh, 650px);
+  top: clamp(600px, 60vh, 650px);
   z-index: -1;
   transition: all 1s ease-in-out;
 }
@@ -800,12 +800,17 @@ footer ul li button:hover {
   }
 
   .LabubuDecoEmpile {
-    width: 100px;
-    height: 140px;
-    top: 150px;
-    left: 60px;
+    width: 180px;
+    top: 100px;
+    left: 10px;
     transform: scaleX(-1);
   }
+/*   .LabubuDecoEmpile {
+    width: 250px;
+    top: 700px;
+    left: 10px;
+    transform: scaleX(-1);
+  } */
 }
 
 @media (max-width: 800px) {
@@ -833,12 +838,6 @@ footer ul li button:hover {
     .conteneur-empile h1{
         font-size: 2rem;
     }
-  .LabubuDecoEmpile {
-    top: 280px;
-    left: 40px;
-    opacity: 40%;
-    height: 18%;
-  }
 
   .graphiqueCarte h1{
     font-size: 2rem;
