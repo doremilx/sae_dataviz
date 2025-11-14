@@ -111,7 +111,7 @@ h1 {
 
 /* Menu de navigation */
 #presentation {
-  min-height: 90vh;
+  min-height: 70vh;
   height: fit-content;
   align-content: center;
 }
