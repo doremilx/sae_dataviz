@@ -45,6 +45,7 @@ h1 {
   min-width: 350px;
 }
 
+/* Labubu Oeil */
 .labubu {
   position: absolute;
   width: 260px;
@@ -52,6 +53,7 @@ h1 {
   right: 30px;
   top: 500px;
 }
+
 
 .labubu .tete {
   width: 100%;
@@ -268,7 +270,6 @@ h1 {
 }
 
 /* Histoire des Labubus */
-
 .conteneur_histoire {
   display: flex;
   width: 80%;
@@ -280,10 +281,10 @@ h1 {
 .conteneur_histoire img {
   width: 35vw;
   min-width: 100%;
-
   border-radius: 50px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .img_histoire {
   min-height: min-content;
   margin-inline: auto;
@@ -678,12 +679,12 @@ footer ul li button:hover {
   .img_histoire {
     width: 100%;
     margin-bottom: 0;
-    margin-top: 300px;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 1200px) {
-.labubu {
+  .labubu {
     width: 200px;
     top: 550px;
   }
@@ -707,8 +708,6 @@ footer ul li button:hover {
     width: 14px;
     height: 24px;
   }
-
-
 
   .graphiqueCarte {
     padding-bottom: 1000px;
@@ -735,7 +734,7 @@ footer ul li button:hover {
     padding-top: 50px;
     flex-direction: row-reverse;
     width: 92%;
-    gap: 0;
+    gap: 30px;
   }
 
   .labubuDecoCarte {
@@ -751,7 +750,7 @@ footer ul li button:hover {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .top-bar {
     display: none;
   }
@@ -806,21 +805,17 @@ footer ul li button:hover {
     width: 180px;
     top: 100px;
     left: 10px;
-    transform: scaleX(-1);
+    transform: scaleX(-1) !important;
   }
 }
 
 @media (max-width: 800px) {
   .remonte_page {
-  height: 70px;
-  width: 70px;}
-
-.labubu {
-right: 33%;
+    height: 70px;
+    width: 70px;
   }
 
-    
-   .LabubuDecoEmpile {
+  .LabubuDecoEmpile {
     width: 250px;
     top: 700px;
     left: 10px;
