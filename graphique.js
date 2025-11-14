@@ -99,6 +99,35 @@ const lineChart = new Chart(ctxLine, {
         },
       },
     },
+    onResize: (chart, size) => {
+  if (size.width < 600) {  // écran smartphone
+    chart.options.plugins.legend.labels.font.size = 14;
+    chart.options.plugins.legend.labels.boxWidth = 25;
+    chart.options.plugins.legend.labels.boxHeight = 12;
+
+    chart.options.scales.x.ticks.font.size = 15;
+    chart.options.scales.y.ticks.font.size = 15;
+
+    chart.options.datasets = chart.data.datasets.map(ds => ({
+      ...ds,
+      pointRadius: 3,
+      pointHoverRadius: 4
+    }));
+  } else { // tablette / PC
+    chart.options.plugins.legend.labels.font.size = 20;
+    chart.options.plugins.legend.labels.boxWidth = 50;
+    chart.options.plugins.legend.labels.boxHeight = 25;
+
+    chart.options.scales.x.ticks.font.size = 20;
+    chart.options.scales.y.ticks.font.size = 20;
+
+    chart.options.datasets = chart.data.datasets.map(ds => ({
+      ...ds,
+      pointRadius: 6,
+      pointHoverRadius: 7
+    }));
+  }
+},
 scales: {
   x: {
     grid: { color: '#000', lineWidth: 1 },

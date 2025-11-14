@@ -722,16 +722,16 @@ footer ul li button:hover {
   }
 
   .legendeCarte {
-    width: 70%;
+    width: 100%;
     margin: 0;
-    padding-inline: 40px;
+    padding-inline: 20px;
     align-self: center;
   }
 
   .columnLegendeCarte {
     padding-top: 50px;
     flex-direction: row-reverse;
-    width: 80%;
+    width: 92%;
     gap: 0;
   }
 
@@ -800,14 +800,25 @@ footer ul li button:hover {
   }
   
   .LabubuDecoEmpile {
-    width: 250px;
-    top: 700px;
+    width: 180px;
+    top: 100px;
     left: 10px;
     transform: scaleX(-1);
   }
 }
 
 @media (max-width: 800px) {
+  .remonte_page {
+  height: 70px;
+  width: 70px;}
+
+   .LabubuDecoEmpile {
+    width: 250px;
+    top: 700px;
+    left: 10px;
+    transform: scaleX(-1);
+    opacity: 50%;
+  }
   footer h1 {
     font-size: 2rem;
   }
@@ -832,6 +843,7 @@ footer ul li button:hover {
     .conteneur-empile h1{
         font-size: 2rem;
     }
+   
 
   .graphiqueCarte h1{
     font-size: 2rem;
