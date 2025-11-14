@@ -215,7 +215,7 @@ h1 {
 
 /* Présentation */
 .texte-presentation {
-  min-height: 75vh;
+  min-height: 50vh;
   font-size: 1.5rem;
   margin-top: 50px;
 }
@@ -798,19 +798,13 @@ footer ul li button:hover {
   .graphiqueEmpile {
     width: 90%;
   }
-
+  
   .LabubuDecoEmpile {
-    width: 180px;
-    top: 100px;
-    left: 10px;
-    transform: scaleX(-1);
-  }
-/*   .LabubuDecoEmpile {
     width: 250px;
     top: 700px;
     left: 10px;
     transform: scaleX(-1);
-  } */
+  }
 }
 
 @media (max-width: 800px) {
