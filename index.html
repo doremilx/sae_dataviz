@@ -12,6 +12,7 @@
       integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
       crossorigin=""
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -54,13 +55,17 @@
 
       <img src="LogoTitre.png" alt="" width="1000" class="logo" />
       <div class="accroche-container">
-        <h1 class="accroche">
+        <h1 class="accroche" data-aos="flip-down">
           Parce que même les jouets ont leurs courbes de tendance… <br />
           Découvre la popularité de Labubu à travers les données !
         </h1>
 
-        <div class="labubu">
-          <img src="imgLabubu/labubu_yeux_bougent.png" alt="Labubu" class="tete"/>
+        <div class="labubu" data-aos="fade-left">
+          <img
+            src="imgLabubu/labubu_yeux_bougent.png"
+            alt="Labubu"
+            class="tete"
+          />
 
           <div class="oeil oeil-gauche">
             <div class="pupille"></div>
@@ -74,7 +79,7 @@
     </header>
 
     <button class="remonte_page"></button>
-    <div class="texte-presentation" id="presentation">
+    <div class="texte-presentation" id="presentation" data-aos="fade-right">
       <div class="conteneur-presentation">
         <img src="labubu-presentation.jpg" alt="" width="500px" />
         <div>
@@ -96,7 +101,7 @@
       </div>
     </div>
 
-    <div class="conteneur_histoire">
+    <div class="conteneur_histoire" data-aos="fade-left">
       <div class="texte_histoire">
         <h1>Le Labubu : la figurine qui a retourné Internet</h1>
         <p>
@@ -115,7 +120,11 @@
         </p>
       </div>
       <div class="img_histoire">
-        <img src="imgLabubu/histoire_labubu.jpg" width="1000px" loading="lazy"/>
+        <img
+          src="imgLabubu/histoire_labubu.jpg"
+          width="1000px"
+          loading="lazy"
+        />
       </div>
     </div>
 
@@ -125,11 +134,13 @@
         Évolution de la recherche “Labubu” selon le temps et les pays les plus
         populaires
       </h1>
-      <div class="graphiquePoints">
-        <div class="graphique">
+      <div class="graphiquePoints" data-aos="fade-up">
+        <div class="graphique" data-aos="fade-up">
           <canvas id="lineChart"></canvas>
         </div>
+        <p>Cliquez sur les éléments de la légende pour afficher ou masquer les courbes du graphique.</p>
       </div>
+    
     </div>
     <div class="FondueVertBas"></div>
 
@@ -139,15 +150,22 @@
       </h1>
 
       <div class="graphiqueEmpile">
-        <canvas id="barChart"></canvas>
-        <img src="imgLabubu/Labubu_deco_barre.png" alt="" class="LabubuDecoEmpile"/>
+        <canvas id="barChart" data-aos="fade-up"></canvas>
+        
+        <img
+          src="imgLabubu/Labubu_deco_barre.png"
+          alt=""
+          class="LabubuDecoEmpile"
+          data-aos="flip-left"
+        />
       </div>
     </div>
+    
 
     <div class="FondueRoseHaut"></div>
     <div class="graphiqueCarte" id="vue-mondiale">
       <h1>Répartition mondiale de la popularité du mot "Labubu"</h1>
-      <div class="carteFlex">
+      <div class="carteFlex" data-aos="fade-up">
         <div class="columnLegendeCarte">
           <div class="legendeCarte">
             <div class="legendes">
@@ -181,6 +199,7 @@
             class="labubuDecoCarte"
             alt=""
             loading="lazy"
+            data-aos="zoom-in-right"
           />
         </div>
 
@@ -226,15 +245,15 @@
         </p>
 
         <h3>Directeur de la publication</h3>
-        <p>
-          Gilles Roussel, directeur de l'Université Gustave Eiffel
-        </p>
+        <p>Gilles Roussel, directeur de l'Université Gustave Eiffel</p>
 
         <h3>Responsable de la protection des données (DPO) :</h3>
         <p>
-        Pour toute question relative au traitement de vos données personnelles, vous pouvez contacter le délégué à la protection des données (DPO) à l’adresse suivante : <br>
-        5 boulevard Descartes, 77420 Champs-sur-Marne <br>
-        Mail: protectiondesdonnees-dpo@univ-eiffel.fr
+          Pour toute question relative au traitement de vos données
+          personnelles, vous pouvez contacter le délégué à la protection des
+          données (DPO) à l’adresse suivante : <br />
+          5 boulevard Descartes, 77420 Champs-sur-Marne <br />
+          Mail: protectiondesdonnees-dpo@univ-eiffel.fr
         </p>
 
         <h3>Réalisation :</h3>
@@ -265,7 +284,12 @@
           telles que votre adresse IP, le type de navigateur utilisé et des
           informations relatives à votre appareil peuvent être collectées par
           GitHub. Pour plus d'informations, vous pouvez consulter la
-          <a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" class="link">Politique de confidentialité</a>
+          <a
+            href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement"
+            target="_blank"
+            class="link"
+            >Politique de confidentialité</a
+          >
           de GitHub.
         </p>
 
@@ -274,7 +298,13 @@
           Le site Databubu respecte la confidentialité des informations de ses
           visiteurs. Nous vous garantissons qu’aucune donnée personnelle n’est
           collectée ou même stockée. Le développement de ce site repose
-          uniquement sur des données collectées auprès de <a href="https://trends.google.fr/trends/explore?q=Labubu&date=now%201-d&geo=FR&hl=fr" target="_blank" class="link">Google Trends</a>.
+          uniquement sur des données collectées auprès de
+          <a
+            href="https://trends.google.fr/trends/explore?q=Labubu&date=now%201-d&geo=FR&hl=fr"
+            target="_blank"
+            class="link"
+            >Google Trends</a
+          >.
         </p>
 
         <h3>Crédits :</h3>
@@ -289,69 +319,100 @@
           Tous les visuels présentés sur ce site sont utilisés dans le cadre
           d’un projet étudiant à but non lucratif. La marques et éléments
           visuels présent demeurent la propriété exclusive de leurs titulaires
-          respectifs. <br> Les données utilisées pour les graphiques et la carte sont fournies par <a href="https://trends.google.fr/trends/explore?q=Labubu&date=now%201-d&geo=FR&hl=fr" target="_blank" class="link">Google Trends</a>. <br> L’ensemble des prompts utilisés pour la génération des images sont 
-          disponible dans le fichier <a href="prompts_databubu.txt" download class="link">prompts_databubu.txt</a>.
+          respectifs. <br />
+          Les données utilisées pour les graphiques et la carte sont fournies
+          par
+          <a
+            href="https://trends.google.fr/trends/explore?q=Labubu&date=now%201-d&geo=FR&hl=fr"
+            target="_blank"
+            class="link"
+            >Google Trends</a
+          >. <br />
+          L’ensemble des prompts utilisés pour la génération des images sont
+          disponible dans le fichier
+          <a href="prompts_databubu.txt" download class="link"
+            >prompts_databubu.txt</a
+          >.
         </p>
 
         <p>
-          <strong>Logo du site :</strong><br>
+          <strong>Logo du site :</strong><br />
           Le logo du site a entièrement été réalisé par Roy Najarian
         </p>
 
         <p>
-          <strong>Logo Textuelle :</strong><br>
-          Visuel généré à l’aide de l’outil d’intelligence artificielle « ChatGPT », 
-          en s’inspirant du logo « Exciting Macaron » visible sur le site officiel, 
-          puis retravaillé graphiquement par Roy NAJARIAN.
+          <strong>Logo Textuelle :</strong><br />
+          Visuel généré à l’aide de l’outil d’intelligence artificielle «
+          ChatGPT », en s’inspirant du logo « Exciting Macaron » visible sur le
+          site officiel, puis retravaillé graphiquement par Roy NAJARIAN.
         </p>
 
         <p>
-          <strong>Labubu Brun aux yeux qui bougent :</strong><br>
-          Image sous licence Creative Commons BY-NC 4.0, utilisée dans un cadre strictement non commercial. <br>
-          Source : <a href="https://pngdownload.io/png-image/labubu-pop-mart-monster-elf-designer-toy-character-transparent-png/" target="_blank" class="link">Pngdownload</a>.
+          <strong>Labubu Brun aux yeux qui bougent :</strong><br />
+          Image sous licence Creative Commons BY-NC 4.0, utilisée dans un cadre
+          strictement non commercial. <br />
+          Source :
+          <a
+            href="https://pngdownload.io/png-image/labubu-pop-mart-monster-elf-designer-toy-character-transparent-png/"
+            target="_blank"
+            class="link"
+            >Pngdownload</a
+          >.
         </p>
 
         <p>
-          <strong>Labubu Pique-nique :</strong><br>
-          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini ». Elle s’appuie 
-          sur des visuels libres de droits ainsi que sur des éléments générés par IA. Le visuel 
-          a ensuite été retravaillé et finalisé graphiquement par Roy NAJARIAN.
+          <strong>Labubu Pique-nique :</strong><br />
+          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini
+          ». Elle s’appuie sur des visuels libres de droits ainsi que sur des
+          éléments générés par IA. Le visuel a ensuite été retravaillé et
+          finalisé graphiquement par Roy NAJARIAN.
         </p>
 
         <p>
-          <strong>Labubu Plage :</strong><br>
-          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini ». Elle s’appuie 
-          sur des visuels libres de droits ainsi que sur des éléments générés par IA.
+          <strong>Labubu Plage :</strong><br />
+          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini
+          ». Elle s’appuie sur des visuels libres de droits ainsi que sur des
+          éléments générés par IA.
         </p>
 
         <p>
-          <strong>Labubu Rose :</strong><br>
-          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini ». Elle s’appuie 
-          sur des visuels libres de droits ainsi que sur des éléments générés par IA. Le visuel 
-          a ensuite été retravaillé et finalisé graphiquement par Roy NAJARIAN.
+          <strong>Labubu Rose :</strong><br />
+          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini
+          ». Elle s’appuie sur des visuels libres de droits ainsi que sur des
+          éléments générés par IA. Le visuel a ensuite été retravaillé et
+          finalisé graphiquement par Roy NAJARIAN.
         </p>
 
         <p>
-          <strong>Labubu Gris :</strong><br>
-          Image sous licence Creative Commons BY-NC 4.0, utilisée dans un cadre strictement non commercial. <br>
-          Source : <a href="https://pngdownload.io/png-image/labubu-grey-pop-mart-designer-toy-monster-elf-character-transparent-png/" target="_blank" class="link">Pngdownload</a>.
+          <strong>Labubu Gris :</strong><br />
+          Image sous licence Creative Commons BY-NC 4.0, utilisée dans un cadre
+          strictement non commercial. <br />
+          Source :
+          <a
+            href="https://pngdownload.io/png-image/labubu-grey-pop-mart-designer-toy-monster-elf-character-transparent-png/"
+            target="_blank"
+            class="link"
+            >Pngdownload</a
+          >.
         </p>
 
         <p>
-          <strong>Labubu marqueur carte :</strong><br>
+          <strong>Labubu marqueur carte :</strong><br />
           L'ensemble des marqueurs ont été réaliser par Rémi LIN.
-        </p> 
-
-        <p>
-          <strong>Labubu Panneau :</strong><br>
-          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini ». Le visuel 
-          a ensuite été retravaillé et finalisé graphiquement par Rémi LIN.
         </p>
 
         <p>
-          <strong>Labubu Champignon :</strong><br>
-          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini ». Le visuel 
-          a ensuite été retravaillé et finalisé graphiquement par Rémi LIN.
+          <strong>Labubu Panneau :</strong><br />
+          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini
+          ». Le visuel a ensuite été retravaillé et finalisé graphiquement par
+          Rémi LIN.
+        </p>
+
+        <p>
+          <strong>Labubu Champignon :</strong><br />
+          Image généré à l’aide de l’outil d’intelligence artificielle « Gemini
+          ». Le visuel a ensuite été retravaillé et finalisé graphiquement par
+          Rémi LIN.
         </p>
 
         <h3>Polices d’écriture :</h3>
@@ -410,7 +471,8 @@
   <script src="graphique.js"></script>
   <script src="carte.js"></script>
   <script src="fonction.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
-
-
-

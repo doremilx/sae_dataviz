@@ -1,3 +1,4 @@
+
 function togglePopup(nom) {
     let popup = document.getElementById("popup-" + nom);
     popup.classList.toggle("open");
