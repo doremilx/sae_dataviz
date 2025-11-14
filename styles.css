@@ -47,10 +47,9 @@ h1 {
 
 .labubu {
   position: absolute;
-  width: 450px;
+  width: 260px;
   max-width: 100%;
-
-  right: 0;
+  right: 30px;
   top: 500px;
 }
 
@@ -61,21 +60,21 @@ h1 {
 
 .oeil {
   position: absolute;
-  width: 40px;
-  height: 55px;
+  width: 35px;
+  height: 50px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 100%;
   overflow: hidden;
 }
 
 .oeil-gauche {
-  top: 160px;
-  left: 163px;
+  top: 180px;
+  left: 76px;
 }
 
 .oeil-droit {
-  top: 160px;
-  right: 175px;
+  top: 180px;
+  right: 78px;
 }
 
 @keyframes gradientAnim {
@@ -97,7 +96,7 @@ h1 {
   width: 20px;
   height: 30px;
   background: #000;
-  border-radius: 50%;
+  border-radius: 100%;
   transition: 0.05s linear;
   background: linear-gradient(
     45deg,
@@ -671,30 +670,7 @@ footer ul li button:hover {
     margin-inline: auto;
   }
 
-  .labubu {
-    width: 300px;
-  }
-
-  .oeil {
-    height: 35px;
-    width: 25px;
-  }
-
-  .oeil-gauche {
-    top: 105px;
-    left: 110px;
-  }
-
-  .oeil-droit {
-    top: 105px;
-    right: 117px;
-  }
-
-  .pupille {
-    width: 15px;
-    height: 25px;
-  }
-
+  
   .conteneur_histoire {
     flex-direction: column-reverse;
   }
@@ -707,6 +683,33 @@ footer ul li button:hover {
 }
 
 @media (max-width: 1200px) {
+.labubu {
+    width: 200px;
+    top: 550px;
+  }
+
+  .oeil {
+    height: 37px;
+    width: 27px;
+  }
+
+  .oeil-gauche {
+    top: 138px;
+    left: 59px;
+  }
+
+  .oeil-droit {
+    top: 138px;
+    right: 60px;
+  }
+
+  .pupille {
+    width: 14px;
+    height: 24px;
+  }
+
+
+
   .graphiqueCarte {
     padding-bottom: 1000px;
   }
@@ -736,8 +739,8 @@ footer ul li button:hover {
   }
 
   .labubuDecoCarte {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -812,6 +815,11 @@ footer ul li button:hover {
   height: 70px;
   width: 70px;}
 
+.labubu {
+right: 33%;
+  }
+
+    
    .LabubuDecoEmpile {
     width: 250px;
     top: 700px;
@@ -842,6 +850,7 @@ footer ul li button:hover {
 
     .conteneur-empile h1{
         font-size: 2rem;
+        padding-bottom: 0;
     }
    
 

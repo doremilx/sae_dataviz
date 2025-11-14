@@ -101,7 +101,7 @@ const lineChart = new Chart(ctxLine, {
     },
     onResize: (chart, size) => {
   if (size.width < 600) {  // écran smartphone
-    chart.options.plugins.legend.labels.font.size = 14;
+    chart.options.plugins.legend.labels.font.size = 16;
     chart.options.plugins.legend.labels.boxWidth = 25;
     chart.options.plugins.legend.labels.boxHeight = 12;
 
@@ -194,6 +194,28 @@ const barChart = new Chart(ctxBar, {
         }
       }
     },
+    onResize: (chart, size) => {
+  if (size.width < 600) {  // Smartphone
+    chart.options.plugins.legend.labels.font.size = 16;
+    chart.options.plugins.legend.labels.boxWidth = 25;
+    chart.options.plugins.legend.labels.boxHeight = 15;
+
+    chart.options.scales.x.ticks.font.size = 12;
+    chart.options.scales.y.ticks.font.size = 12;
+
+    // Espace supplémentaire quand la légende est au-dessus
+    chart.options.layout.padding.top = 40;
+  } else { // Tablette / PC
+    chart.options.plugins.legend.labels.font.size = 30;
+    chart.options.plugins.legend.labels.boxWidth = 50;
+    chart.options.plugins.legend.labels.boxHeight = 30;
+
+    chart.options.scales.x.ticks.font.size = 20;
+    chart.options.scales.y.ticks.font.size = 20;
+
+    chart.options.layout.padding.top = 20;
+  }
+},
     layout: {
       padding: {
         left: 40,
