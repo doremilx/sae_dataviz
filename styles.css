@@ -317,7 +317,7 @@ h1 {
 .graphiquePoints p {
   font-size: 1.1em;
   padding-top: 10px;
-  padding-right: 10px;
+  padding-inline: 10px;
   text-align: right;
 }
 
@@ -371,7 +371,7 @@ h1 {
 }
 
 .graphiqueEmpile {
-  width: 90%;
+  width: 95%;
   height: 500px;
   margin-inline: auto;
 }
@@ -421,12 +421,11 @@ h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .carteFlex {
   display: flex;
   width: 95%;
   margin-inline: auto;
+  padding-right: 35px;
   align-items: stretch;
 }
 
@@ -438,11 +437,11 @@ h1 {
   gap: 70px;
 }
 
-.columnLegendeCarte2{
+.columnLegendeCarte2 {
   width: 100%;
 }
 
-.columnLegendeCarte2 p{
+.columnLegendeCarte2 p {
   font-size: 1.1em;
   margin: 0;
   padding-top: 15px;
@@ -797,13 +796,13 @@ footer ul li button:hover {
   }
 
   .graphiqueCarte {
-    padding-bottom: 1000px;
-    height: 115vh;
+    height: 120vh;
   }
 
   .carteFlex {
     flex-direction: column;
-    align-items: center;
+    padding-right: 0px;
+    padding-left: 5vh;
   }
 
   #map {
@@ -837,6 +836,11 @@ footer ul li button:hover {
 
   .texte-conclusion {
     padding: 0px 0 20px;
+  }
+
+  .columnLegendeCarte2 p {
+    max-width: 850px;
+    padding-right: 15px;
   }
 }
 
@@ -929,6 +933,10 @@ footer ul li button:hover {
     width: 10px;
     height: 19px;
   }
+
+  .graphiqueCarte {
+    height: 124vh;
+  }
 }
 
 @media (max-width: 950px) {
@@ -951,6 +959,10 @@ footer ul li button:hover {
 
   .popup-contact-content .personne p {
     align-items: center;
+  }
+
+  .carteFlex {
+    padding-left: 2vh;
   }
 }
 
@@ -977,28 +989,26 @@ footer ul li button:hover {
 }
 
 @media (max-width: 600px) {
-    h1{
-        font-size: 1.5rem;
-    }
-    p{
-        font-size: 1rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    .conteneur-points h1{
-        font-size: 1.5rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    .conteneur-empile h1{
-        font-size: 1.5rem;
-        padding-bottom: 0;
-    }
-   
+  .conteneur-points h1{
+    font-size: 1.5rem;
+  }
+
+  .conteneur-empile h1{
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
 
   .graphiqueCarte h1{
     font-size: 1.5rem;
   }
-
-
 
   footer {
     padding-bottom: 20px;
@@ -1023,6 +1033,18 @@ footer ul li button:hover {
     opacity: 40%;
   }
 
+  .graphiquePoints p, .graphiqueEmpile p, .columnLegendeCarte2 p {
+    font-size: 1rem;
+  }
+
+  .carteFlex {
+    padding-left: 0vh;
+  }
+
+  .labubuDecoCarte {
+    width: 120px;
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 565px) {
