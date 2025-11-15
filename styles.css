@@ -343,6 +343,7 @@ h1 {
   min-height: 620px;
 }
 
+
 .conteneur-empile h1 {
   margin-inline: 50px;
   margin-bottom: 20px;
@@ -350,6 +351,12 @@ h1 {
   padding-bottom: 50px;
 }
 
+.conteneur-empile p{
+  width: fit-content;
+  margin-left: 20px;
+  text-align: start;
+
+}
 .LabubuDecoEmpile {
   position: absolute;
   width: 450px;
@@ -1007,6 +1014,10 @@ footer ul li button:hover {
 
 /* Responsive doux */
 @media (max-width: 560px) {
+.conteneur-empile p{
+  font-size: 0.8rem;
+}
+
   #popup-contact .personne {
     width: 100%;
   }
