@@ -414,7 +414,8 @@ h1 {
 }
 
 .labubuDecoCarte {
-  height: auto;
+  width: 350px;
+  margin-left: 50px;
   position: static;
 }
 
@@ -441,6 +442,28 @@ h1 {
 .FondueRoseBas {
   background-image: url(TransitionsPages/TransitionRoseBas.svg);
   height: 91px;
+}
+
+.container-cartes-conclusion {
+  background-color: #e99ea8;
+}
+
+.texte-conclusion {
+  padding: 100px 0 40px;
+}
+
+.conteneur-conclusion {
+  display: flex;
+  width: 80%;
+  margin-inline: auto;
+  gap: 40px;
+  font-size: 1.4rem;
+}
+
+.texte-conclusion-video .tiktok-embed {
+  max-width: 450px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */
@@ -740,6 +763,15 @@ footer ul li button:hover {
   .labubuDecoCarte {
     width: 250px;
     height: 250px;
+  }
+
+  .conteneur-conclusion {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .texte-conclusion {
+    padding: 0px 0 20px;
   }
 }
 
