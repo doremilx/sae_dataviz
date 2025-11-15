@@ -313,10 +313,14 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.graphiquePoints p{
-  margin-top: 30px;
-  margin-right: 30px;
+
+.graphiquePoints p {
+  font-size: 1.1em;
+  padding-top: 10px;
+  padding-right: 10px;
+  text-align: right;
 }
+
 .conteneur-points h1 {
   margin: 0;
   padding-top: 15px;
@@ -372,19 +376,23 @@ h1 {
   margin-inline: auto;
 }
 
+.graphiqueEmpile p {
+  font-size: 1.1em;
+  padding-top: 15px;
+}
+
 /* Graphique Carte */
 .graphiqueCarte {
   height: 110vh;
   background-color: #e99ea8;
 }
+
 .graphiqueCarte h1 {
   margin: 0;
   padding-top: 15px;
   margin-left: 40px;
   font-size: 2.8rem;
 }
-
-
 
 #map {
   height: 700px;
@@ -429,16 +437,17 @@ h1 {
   justify-content: space-between;
   gap: 70px;
 }
+
 .columnLegendeCarte2{
   width: 100%;
 }
+
 .columnLegendeCarte2 p{
   font-size: 1.1em;
-
   margin: 0;
-  margin-top: 10px;
-  margin-left: 20px;
-
+  padding-top: 15px;
+  padding-left: 20px;
+  max-width: 1000px;
 }
 
 .labubuDecoCarte {
@@ -461,6 +470,11 @@ h1 {
 
 .leaflet-popup-content h1 {
   margin: 0;
+}
+
+.leaflet-bottom.leaflet-right {
+  right: 20px !important;
+  bottom: 5px !important;
 }
 
 .FondueRoseHaut {
@@ -638,7 +652,12 @@ footer ul li button:hover {
 }
 
 .link {
-  color: #8f58b1;
+  color: #9332cf;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .popup-content p {
