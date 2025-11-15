@@ -453,12 +453,9 @@ h1 {
   height: 91px;
 }
 
-.container-cartes-conclusion {
-  background-color: #e99ea8;
-}
 
 .texte-conclusion {
-  padding: 20px 0 40px;
+  padding: 80px 0 30px;
 }
 
 .conteneur-conclusion {
@@ -475,13 +472,19 @@ h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+.FonduBleuHaut {
+  background-image: url(TransitionsPages/TransitionBleuHaut.svg);
+  height: 91px;
+}
+
 /* Footer */
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
-  border: #fbf6d1 solid;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #b4c6ff;
 }
 
 footer h1 {
@@ -490,7 +493,9 @@ footer h1 {
   font-family: "BiscuitGlitch", Courier, monospace;
   font-size: 3.5rem;
   margin: 0;
+  padding-left: 15px;
   color: #000;
+  padding-top: 20px;
 }
 
 footer h1 img {
@@ -511,6 +516,7 @@ footer button {
   border: none;
   cursor: pointer;
   transition: 0.2s ease;
+  white-space: nowrap;
 }
 
 footer button:hover {
@@ -550,12 +556,12 @@ footer ul li button:hover {
 .labubu_deco_allonge {
   position: absolute;
   bottom: 0.5;
-  z-index: 1000;
   left: 75%;
   transform: translateX(-50%);
-  opacity: 40%;
+  opacity: 60%;
 }
 
+/* Popup mention légale */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -637,8 +643,9 @@ footer ul li button:hover {
   color: #8f58b1;
 }
 
+/* Popup Contact */
 .popup-contact-content {
-  width: 50%;
+  width: 60%;
   height: 40vh;
 }
 
@@ -647,7 +654,7 @@ footer ul li button:hover {
   justify-content: center;
   gap: 60px;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .popup-contact-content .personne {
@@ -687,12 +694,6 @@ footer ul li button:hover {
   text-decoration: underline;
 }
 
-/* Responsive doux */
-@media (max-width: 560px) {
-  #popup-contact .personne {
-    width: 100%;
-  }
-}
 
 @media (max-width: 1300px) {
   .conteneur-presentation {
@@ -712,6 +713,22 @@ footer ul li button:hover {
     width: 100%;
     margin-bottom: 0;
     margin-top: 50px;
+  }
+
+  .popup-contact-content .container {
+    gap: 30px;
+  }
+
+  .popup-contact-content .personne {
+    width: 260px;
+  }
+
+  .popup-contact-content .personne h3 {
+    font-size: 1.2rem;
+  }
+
+  .popup-contact-content .personne a {
+    font-size: 1rem;
   }
 }
 
@@ -848,6 +865,54 @@ footer ul li button:hover {
     left: 10px;
     transform: scaleX(-1) !important;
   }
+
+  .labubu {
+    width: 150px;
+    top: 540px;
+  }
+
+  .oeil {
+    height: 28px;
+    width: 18px;
+  }
+
+  .oeil-gauche {
+    top: 104px;
+    left: 46px;
+  }
+
+  .oeil-droit {
+    top: 104px;
+    right: 46px;
+  }
+
+  .pupille {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 950px) {
+  .popup-contact-content .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .popup-contact-content .personne {
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 16px;
+  }
+
+  .popup-contact-content .personne h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .popup-contact-content .personne p {
+    align-items: center;
+  }
 }
 
 @media (max-width: 800px) {
@@ -894,6 +959,10 @@ footer ul li button:hover {
     font-size: 2rem;
   }
 
+  footer {
+    padding-bottom: 20px;
+  }
+
   footer h1{
     font-size: 1.8rem;
   }
@@ -902,7 +971,24 @@ footer ul li button:hover {
     width: 30%;
   }
   footer ul li button{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
 
+  .labubu_deco_allonge {
+    opacity: 40%;
+  }
+
+}
+
+@media (max-width: 565px) {
+  footer {
+    padding-bottom: 40px;
+  }
+}
+
+/* Responsive doux */
+@media (max-width: 560px) {
+  #popup-contact .personne {
+    width: 100%;
   }
 }
