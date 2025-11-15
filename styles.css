@@ -496,11 +496,22 @@ h1 {
   margin-inline: auto;
   gap: 40px;
   font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .texte-conclusion-video .tiktok-embed {
   max-width: 450px;
   border-radius: 25px;
+}
+
+.container-color-video {
+  background-color: #cbd7a8;
+  padding-inline: 60px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -834,6 +845,10 @@ footer ul li button:hover {
     gap: 0px;
   }
 
+  .container-color-video {
+    padding-inline: 40px;
+  }
+
   .texte-conclusion {
     padding: 0px 0 20px;
   }
@@ -1055,11 +1070,15 @@ footer ul li button:hover {
 
 /* Responsive doux */
 @media (max-width: 560px) {
-.conteneur-empile p{
-  font-size: 0.8rem;
-}
+  .conteneur-empile p{
+    font-size: 0.8rem;
+  }
 
   #popup-contact .personne {
     width: 100%;
+  }
+
+  .container-color-video {
+    padding-inline: 20px;
   }
 }
