@@ -18,6 +18,7 @@ map.on('mouseout', function () {
   map.scrollWheelZoom.disable();
 });
 
+
 const BASEMAP_ID = "f1236d311bd44cadbccf5c1a377791b4";
 const API_KEY = "AAPTxy8BH1VEsoebNVZXo8HurBOs35bG4WgeJXCdQmS-h4OUQ9jtKQUAbYP_uCTi0vyXlsZhXPzT1i_jB-1itZLH3uqRqnqP_32gm2Zdx_u01Svb3BGy6_3K9U0NiyJ0_W5gHIzOMj8zVzTpGzq7foLrN8MEVb0IClZA49O7x1yRhxqlSlXBjdrAUc_nD7I_xXVmYDjomqzs2ERXe82CQoJ9VfYPv5w6EpA2X3Y6xeBPY44.AT1_4yuKA1Il";
 

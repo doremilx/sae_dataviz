@@ -72,7 +72,7 @@ window.addEventListener("scroll", function () {
     let distanceFooter = footerTop - (positionY + windowHeight);
 
     if (distanceFooter < 0) {
-        bouton.style.bottom = Math.abs(distanceFooter) + -55 + "px";
+        bouton.style.bottom = Math.abs(distanceFooter) + -50 + "px";
     } 
     else {
         bouton.style.bottom = "50px";

@@ -14,6 +14,9 @@
   box-sizing: border-box;
 }
 
+html{
+  overflow-x: hidden;
+}
 body {
   background-color: #fbf6d1;
   margin: 0;
@@ -310,7 +313,10 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
+.graphiquePoints p{
+  margin-top: 30px;
+  margin-right: 30px;
+}
 .conteneur-points h1 {
   margin: 0;
   padding-top: 15px;
@@ -400,6 +406,8 @@ h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+
+
 .carteFlex {
   display: flex;
   width: 95%;
@@ -418,8 +426,12 @@ h1 {
   width: 100%;
 }
 .columnLegendeCarte2 p{
-  text-align: end;
   font-size: 1.1em;
+
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+
 }
 
 .labubuDecoCarte {
@@ -483,7 +495,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 10px;
+
   background-color: #b4c6ff;
 }
 
@@ -760,6 +772,7 @@ footer ul li button:hover {
 
   .graphiqueCarte {
     padding-bottom: 1000px;
+    height: 115vh;
   }
 
   .carteFlex {
@@ -939,25 +952,27 @@ footer ul li button:hover {
 
 @media (max-width: 600px) {
     h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     p{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .conteneur-points h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .conteneur-empile h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-bottom: 0;
     }
    
 
   .graphiqueCarte h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+
+
 
   footer {
     padding-bottom: 20px;
@@ -972,6 +987,10 @@ footer ul li button:hover {
   }
   footer ul li button{
     font-size: 1.4rem;
+  }
+
+  footer ul{
+    margin-right: 10px;
   }
 
   .labubu_deco_allonge {
